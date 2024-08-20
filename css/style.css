@@ -11,15 +11,6 @@
     pointer-events: auto;
 }
 
-.utk-owner-heading-counter {
-    counter-reset: heading;
-}
-
-.utk-owner-heading-counter > h3::after {
-    counter-increment: heading;
-    content: "Estilo 0" counter(heading);
-}
-
 .utk-owner-area-clipboardcode,
 .utk-owner-area-clipboardcode::selection,
 .utk-owner-area-clipboardcode:focus-visible {

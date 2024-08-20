@@ -60,6 +60,13 @@
     </section>
     <section class="uk-section uk-section-medium">
         <div class="uk-container uk-container-medium">
+            <nav aria-label="Breadcrumb">
+                <ul class="uk-breadcrumb">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../recursos.html">Recursos</a></li>
+                    <li><span aria-current="page">Hero</span></li>
+                </ul>
+            </nav>
             <h1 class="uk-heading-large">Hero</h1>
             <h2>Seção no topo para cativar os usuários na primeira aterrissagem</h2>
             <p>
@@ -72,15 +79,14 @@
             </p>
             <hr class="uk-margin-medium-top">
             <div class="uk-margin-medium-top">
-                <h2 uk-sticky="end: true; overflow-flip: false; offset: -1" class="utk-owner-blurred-effect-owner">Hero estático</h2>
-                <div class="uk-padding-small utk-owner-box-style utk-owner-heading-counter">
-                    <h3 id="estilo-01"></h3>
+                <h2 uk-sticky="end: true; overflow-flip: false; offset: -1" class="uk-margin-small-bottom utk-owner-blurred-effect-owner">Hero estático</h2>
+                <div class="uk-padding-small utk-owner-box-style">
+                    <h3 id="estilo-01">Estilo 01</h3>
                     <ul uk-tab>
                         <li><a href="#">Visualização</a></li>
                         <li><a href="#">HTML</a></li>
                         <li><a href="#">CSS</a></li>
                         <li><a href="#">JS</a></li>
-                        <!-- Clipboard -->
                         <li class="uk-margin-auto-left uk-disabled uk-position-relative">
                             <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
                             <textarea class="utk-owner-area-clipboardcode">
@@ -96,13 +102,12 @@
                             </textarea>
                         </li>
                         <li class="uk-disabled">
-                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen"><i class="bi bi-fullscreen"></i></a>
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen1"><i class="bi bi-fullscreen"></i></a>
                         </li>
                         <li class="uk-disabled">
-                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share"><i class="bi bi-share"></i></a>
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share1"><i class="bi bi-share"></i></a>
                         </li>
-                        <!-- Fullscreen -->
-                        <div id="modal-fullscreen" class="uk-padding-remove" uk-modal>
+                        <div id="modal-fullscreen1" class="uk-padding-remove" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
                                 <button class="uk-modal-close-default" type="button" uk-close></button>
                                 <section class="uk-section uk-flex uk-flex-middle uk-height-viewport uk-background-cover" style="background-image: url('https://placehold.co/1536x738');">
@@ -116,8 +121,7 @@
                                 </section>
                             </div>
                         </div>
-                        <!-- Share -->
-                        <div id="modal-share" uk-modal>
+                        <div id="modal-share1" uk-modal>
                             <div class="uk-modal-dialog uk-modal-body">
                                 <button class="uk-modal-close-default" type="button" uk-close></button>
                                 <h2 class="uk-modal-title">Compartilhe o estilo</h2>
@@ -133,7 +137,6 @@
                         </div>
                     </ul>
                     <div class="uk-switcher uk-margin">
-                        <!-- View -->
                         <div>
                             <section class="uk-section uk-flex uk-flex-middle uk-height-viewport uk-background-cover" style="background-image: url('https://placehold.co/1536x738');">
                                 <div class="uk-container uk-width-1-1">
@@ -145,7 +148,6 @@
                                 </div>
                             </section>
                         </div>
-                        <!-- HTML -->
                         <div>
 <pre>
 <code>
@@ -161,9 +163,193 @@
 </code>
 </pre>
                         </div>
-                        <!-- CSS -->
                         <div>Este estilo não inclui nenhum CSS adicional.</div>
-                        <!-- JS -->
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="estilo-02">Estilo 02</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-flex uk-flex-middle uk-text-center uk-height-viewport uk-background-cover" style="background-image: url('https://placehold.co/1536x738');">
+                                    <div class="uk-container uk-flex uk-flex-center">
+                                        <div class="uk-width-2-3@s">
+                                            <h1 class="uk-heading-xlarge">Lorem ipsum dolor sit amet</h1>
+                                            <p class="uk-margin-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita explicabo laudantium dicta modi, itaque voluptate ipsum dolorem nam, deserunt molestiae error maiores accusantium totam odit debitis temporibus, laborum recusandae.</p>
+                                            <button class="uk-button uk-button-large uk-button-primary">Learn more</button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen2"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share2"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen2" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-flex uk-flex-middle uk-text-center uk-height-viewport uk-background-cover" style="background-image: url('https://placehold.co/1536x738');">
+                                    <div class="uk-container uk-flex uk-flex-center">
+                                        <div class="uk-width-2-3@s">
+                                            <h1 class="uk-heading-xlarge">Lorem ipsum dolor sit amet</h1>
+                                            <p class="uk-margin-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita explicabo laudantium dicta modi, itaque voluptate ipsum dolorem nam, deserunt molestiae error maiores accusantium totam odit debitis temporibus, laborum recusandae.</p>
+                                            <button class="uk-button uk-button-large uk-button-primary">Learn more</button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share2" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/hero.html#estilo-02
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/hero.html#estilo-02
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-flex uk-flex-middle uk-text-center uk-height-viewport uk-background-cover" style="background-image: url('https://placehold.co/1536x738');">
+                                <div class="uk-container uk-flex uk-flex-center">
+                                    <div class="uk-width-2-3@s">
+                                        <h1 class="uk-heading-xlarge">Lorem ipsum dolor sit amet</h1>
+                                        <p class="uk-margin-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita explicabo laudantium dicta modi, itaque voluptate ipsum dolorem nam, deserunt molestiae error maiores accusantium totam odit debitis temporibus, laborum recusandae.</p>
+                                        <button class="uk-button uk-button-large uk-button-primary">Learn more</button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-flex uk-flex-middle uk-text-center uk-height-viewport uk-background-cover&#x22; style=&#x22;background-image: url(&#x27;https://placehold.co/1536x738&#x27;);&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-flex uk-flex-center&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-width-2-3@s&#x22;&#x3E;
+                &#x3C;h1 class=&#x22;uk-heading-xlarge&#x22;&#x3E;Lorem ipsum dolor sit amet&#x3C;/h1&#x3E;
+                &#x3C;p class=&#x22;uk-margin-medium&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita explicabo laudantium dicta modi, itaque voluptate ipsum dolorem nam, deserunt molestiae error maiores accusantium totam odit debitis temporibus, laborum recusandae.&#x3C;/p&#x3E;
+                &#x3C;button class=&#x22;uk-button uk-button-large uk-button-primary&#x22;&#x3E;Learn more&#x3C;/button&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="estilo-03">Estilo 03</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-flex uk-flex-middle uk-flex-center uk-height-viewport uk-background-cover" style="background-image: url('https://placehold.co/1536x738');">
+                                    <div class="uk-width-5-6 uk-flex uk-flex-wrap uk-flex-middle uk-flex-between">
+                                        <div class="uk-width-2-3@m">
+                                            <h1 class="uk-heading-2xlarge">Lorem<br>Lorem<br>Lorem</h1>
+                                        </div>
+                                        <div class="uk-width-1-3@m">
+                                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dicta.</h2>
+                                            <p class="uk-margin-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita explicabo laudantium dicta modi, itaque voluptate ipsum dolorem nam, deserunt molestiae error maiores accusantium totam odit debitis temporibus, laborum recusandae.</p>
+                                            <button class="uk-button uk-button-primary">Learn more</button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen3"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share3"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen3" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-flex uk-flex-middle uk-flex-center uk-height-viewport uk-background-cover" style="background-image: url('https://placehold.co/1536x738');">
+                                    <div class="uk-width-5-6 uk-flex uk-flex-wrap uk-flex-middle uk-flex-between">
+                                        <div class="uk-width-2-3@m">
+                                            <h1 class="uk-heading-2xlarge">Lorem<br>Lorem<br>Lorem</h1>
+                                        </div>
+                                        <div class="uk-width-1-3@m">
+                                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dicta.</h2>
+                                            <p class="uk-margin-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita explicabo laudantium dicta modi, itaque voluptate ipsum dolorem nam, deserunt molestiae error maiores accusantium totam odit debitis temporibus, laborum recusandae.</p>
+                                            <button class="uk-button uk-button-primary">Learn more</button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share3" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/hero.html#estilo-03
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/hero.html#estilo-03
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-flex uk-flex-middle uk-flex-center uk-height-viewport uk-background-cover" style="background-image: url('https://placehold.co/1536x738');">
+                                <div class="uk-width-5-6 uk-flex uk-flex-wrap uk-flex-middle uk-flex-between">
+                                    <div class="uk-width-2-3@m">
+                                        <h1 class="uk-heading-2xlarge">Lorem<br>Lorem<br>Lorem</h1>
+                                    </div>
+                                    <div class="uk-width-1-3@m">
+                                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dicta.</h2>
+                                        <p class="uk-margin-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita explicabo laudantium dicta modi, itaque voluptate ipsum dolorem nam, deserunt molestiae error maiores accusantium totam odit debitis temporibus, laborum recusandae.</p>
+                                        <button class="uk-button uk-button-primary">Learn more</button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-flex uk-flex-middle uk-flex-center uk-height-viewport uk-background-cover&#x22; style=&#x22;background-image: url(&#x27;https://placehold.co/1536x738&#x27;);&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-width-5-6 uk-flex uk-flex-wrap uk-flex-middle uk-flex-between&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-width-2-3@m&#x22;&#x3E;
+                &#x3C;h1 class=&#x22;uk-heading-2xlarge&#x22;&#x3E;Lorem&#x3C;br&#x3E;Lorem&#x3C;br&#x3E;Lorem&#x3C;/h1&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-width-1-3@m&#x22;&#x3E;
+                &#x3C;h2&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dicta.&#x3C;/h2&#x3E;
+                &#x3C;p class=&#x22;uk-margin-medium&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita explicabo laudantium dicta modi, itaque voluptate ipsum dolorem nam, deserunt molestiae error maiores accusantium totam odit debitis temporibus, laborum recusandae.&#x3C;/p&#x3E;
+                &#x3C;button class=&#x22;uk-button uk-button-primary&#x22;&#x3E;Learn more&#x3C;/button&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
                         <div>Este estilo não inclui nenhum JS adicional.</div>
                     </div>
                 </div>
