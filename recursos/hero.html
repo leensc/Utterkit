@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O Hero (ou Herói em português) é uma seção que fica no topo da página do site, geralmente está relacionada a página inicial, onde os usuários terão o primeiro contato com o conteúdo. Ela é uma das seções mais importantes já que o seu objetivo é chamar a atenção dos usuários na primeira experiência com o site, dando uma introdução ao conteúdo principal, sendo ele, um produto, serviço ou mensagem.">
+    <meta name="author" content="Leandro do Nascimento">
+    <link rel="shortcut icon" href="../img/logo-primary.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <!-- UIkit -->
+    <link rel="stylesheet" href="../css/uikit.min.css">
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Hero | Utterkit</title>
+</head>
+<body>
+    <section class="uk-section-primary uk-section-primary">
+        <div id="offcanvas-push" uk-offcanvas="mode: push">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center uk-background-primary">
+                <button class="uk-offcanvas-close uk-close-large" type="button" uk-close uk-toggle="cls: uk-close-large; mode: media; media: @s"></button>
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" uk-nav>
+                    <li><a href="../index.html">Home</a></li>
+                    <hr>
+                    <li><a href="../instalacao.html">Instalação</a></li>
+                    <hr>
+                    <li class="uk-active"><a href="../recursos.html">Recursos</a></li>
+                    <hr>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <hr>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <hr>
+                    <li><a href="../termos-e-uso.html">Termos e Uso</a></li>
+                    <hr>
+                    <li><a href="../licenca.html">Licença</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="uk-navbar-container uk-navbar-transparent">
+            <div class="uk-container uk-container-large">
+                <div class="uk-margin-left uk-margin-right">
+                    <div uk-navbar="mode: click" class="uk-navbar uk-flex uk-flex-middle uk-flex-between">
+                        <div>
+                            <a href="../index.html" class="uk-navbar-item uk-logo">
+                                <img src="../img/logo-secondary.svg" width="30" height="30" alt="Logo Utterkit">
+                                <span class="uk-margin-small-left">Utterkit</span>
+                            </a>
+                        </div>
+                        <a href="#offcanvas-push" uk-toggle>
+                            <span uk-icon="icon: menu; ratio: 2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="uk-section uk-section-medium">
+        <div class="uk-container uk-container-medium">
+            <h1 class="uk-heading-large">Hero</h1>
+            <h2>Seção no topo para cativar os usuários na primeira aterrissagem</h2>
+            <p>
+                O <b>Hero</b> (ou <em>Herói</em> em português) é uma seção que fica no topo da página do site, geralmente está relacionada a página inicial,
+                onde os usuários terão o primeiro contato com o conteúdo. Ela é uma das seções mais importantes já que o seu objetivo é chamar a atenção dos
+                usuários na primeira experiência com o site, dando uma introdução ao conteúdo principal, sendo ele, um produto, serviço ou mensagem. Por conta,
+                de ser a primeira coisa que os usuários veem ao entrar no site, ela é projetada para ter um design totalmente diferente e atraente das outras
+                seções, tudo isso para criar uma experiência impactante e memorável. Ela pode conter diversos elementos como imagens, vídeos, Copywriting, Call
+                to action (CTAs), botões/textos destacados e etc.
+            </p>
+            <hr class="uk-margin-medium-top">
+            <div class="uk-margin-medium-top">
+                <h2 uk-sticky="end: true; overflow-flip: false; offset: -1" class="utk-owner-blurred-effect-owner">Hero estático</h2>
+                <div class="uk-padding-small utk-owner-box-style utk-owner-heading-counter">
+                    <h3 id="estilo-01"></h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <!-- Clipboard -->
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-flex uk-flex-middle uk-height-viewport uk-background-cover" style="background-image: url('https://placehold.co/1536x738');">
+                                    <div class="uk-container uk-width-1-1">
+                                        <div class="uk-width-2-3@s">
+                                            <h1 class="uk-heading-xlarge">Lorem ipsum dolor sit amet</h1>
+                                            <p class="uk-margin-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita explicabo laudantium dicta modi, itaque voluptate ipsum dolorem nam, deserunt molestiae error maiores accusantium totam odit debitis temporibus, laborum recusandae.</p>
+                                            <button class="uk-button uk-button-primary">Learn more</button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share"><i class="bi bi-share"></i></a>
+                        </li>
+                        <!-- Fullscreen -->
+                        <div id="modal-fullscreen" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-flex uk-flex-middle uk-height-viewport uk-background-cover" style="background-image: url('https://placehold.co/1536x738');">
+                                    <div class="uk-container uk-width-1-1">
+                                        <div class="uk-width-2-3@s">
+                                            <h1 class="uk-heading-xlarge">Lorem ipsum dolor sit amet</h1>
+                                            <p class="uk-margin-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita explicabo laudantium dicta modi, itaque voluptate ipsum dolorem nam, deserunt molestiae error maiores accusantium totam odit debitis temporibus, laborum recusandae.</p>
+                                            <button class="uk-button uk-button-primary">Learn more</button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <!-- Share -->
+                        <div id="modal-share" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/hero.html#estilo-01
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/hero.html#estilo-01
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <!-- View -->
+                        <div>
+                            <section class="uk-section uk-flex uk-flex-middle uk-height-viewport uk-background-cover" style="background-image: url('https://placehold.co/1536x738');">
+                                <div class="uk-container uk-width-1-1">
+                                    <div class="uk-width-2-3@s">
+                                        <h1 class="uk-heading-xlarge">Lorem ipsum dolor sit amet</h1>
+                                        <p class="uk-margin-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita explicabo laudantium dicta modi, itaque voluptate ipsum dolorem nam, deserunt molestiae error maiores accusantium totam odit debitis temporibus, laborum recusandae.</p>
+                                        <button class="uk-button uk-button-primary">Learn more</button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- HTML -->
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-flex uk-flex-middle uk-height-viewport uk-background-cover&#x22; style=&#x22;background-image: url(&#x27;https://placehold.co/1536x738&#x27;);&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-width-1-1&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-width-2-3@s&#x22;&#x3E;
+                &#x3C;h1 class=&#x22;uk-heading-xlarge&#x22;&#x3E;Lorem ipsum dolor sit amet&#x3C;/h1&#x3E;
+                &#x3C;p class=&#x22;uk-margin-medium&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita explicabo laudantium dicta modi, itaque voluptate ipsum dolorem nam, deserunt molestiae error maiores accusantium totam odit debitis temporibus, laborum recusandae.&#x3C;/p&#x3E;
+                &#x3C;button class=&#x22;uk-button uk-button-primary&#x22;&#x3E;Learn more&#x3C;/button&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <!-- CSS -->
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <!-- JS -->
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="uk-padding-small uk-section-primary uk-text-center">
+        <footer>
+            <p class="uk-margin-remove uk-text-italic">
+                Feito com ❤️ por: <a href="https://github.com/leensc" target="_blank" rel="noopener"><span>Leandro do Nascimento</span></a>
+            </p>
+        </footer>
+    </section>
+</body>
+</html>

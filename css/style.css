@@ -1,0 +1,69 @@
+.utk-owner-box-style {
+    border: 1px solid #e5e5e5;
+}
+
+.utk-owner-box-style .uk-tab > * > a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+.utk-owner-box-style .uk-tab .uk-disabled {
+    pointer-events: auto;
+}
+
+.utk-owner-heading-counter {
+    counter-reset: heading;
+}
+
+.utk-owner-heading-counter > h3::after {
+    counter-increment: heading;
+    content: "Estilo 0" counter(heading);
+}
+
+.utk-owner-area-clipboardcode,
+.utk-owner-area-clipboardcode::selection,
+.utk-owner-area-clipboardcode:focus-visible {
+    width: 0;
+    height: 0;
+    border: none;
+    outline: none;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+    background-color: transparent;
+    resize: none;
+    color: transparent;
+}
+
+.utk-owner-alert-clipboard-share {
+    overflow-x: hidden;
+    word-wrap: break-word;
+    padding-right: 90px;
+}
+
+.utk-owner-blurred-effect-owner {
+    background-color: hsla(0, 0%, 100%, .82);
+    backdrop-filter: blur(5px);
+    margin: 0;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.uk-container .uk-switcher .uk-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 640px) {
+    .uk-container .uk-switcher .uk-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 960px) {
+    .uk-container .uk-switcher .uk-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
