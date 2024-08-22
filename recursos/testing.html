@@ -19,15 +19,71 @@
     <title>Testing | Utterkit</title>
 </head>
 <body>
-    <section class="uk-section uk-flex uk-flex-middle uk-flex-center uk-height-viewport uk-background-cover" style="background-image: url('https://placehold.co/1536x738');">
-        <div class="uk-width-5-6 uk-flex uk-flex-wrap uk-flex-middle uk-flex-between">
-            <div class="uk-width-2-3@m">
-                <h1 class="uk-heading-2xlarge">Lorem<br>Lorem<br>Lorem</h1>
-            </div>
-            <div class="uk-width-1-3@m">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dicta.</h2>
+    <style>
+        .utk-slider-limite-x {
+            overflow: hidden !important;
+        }
+
+        .utk-slider-limite-x::before {
+            content: "";
+            z-index: 5;
+            background: linear-gradient(90deg, rgb(248, 248, 248) 0%, rgba(243,243,243,0) 100%);
+            width: 10%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .utk-slider-limite-x::after {
+            content: "";
+            z-index: 5;
+            background: linear-gradient(-90deg, rgb(248, 248, 248) 0%, rgba(243,243,243,0) 100%);
+            width: 10%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    </style>
+    <section class="uk-flex uk-flex-middle uk-flex-center uk-height-viewport uk-section-muted">
+        <div class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-width-auto@xl">
+            <div class="uk-width-1-2@m uk-padding">
+                <h1 class="uk-heading-medium">Lorem ipsum dolor, sit amet consectetur adipisicing</h1>
                 <p class="uk-margin-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita explicabo laudantium dicta modi, itaque voluptate ipsum dolorem nam, deserunt molestiae error maiores accusantium totam odit debitis temporibus, laborum recusandae.</p>
-                <button class="uk-button uk-button-primary">Learn more</button>
+                <div class="uk-margin-large-bottom">
+                    <button class="uk-button uk-button-primary uk-margin-small-bottom">Get in touch</button>
+                    <button class="uk-button uk-button-default uk-margin-small-bottom">know more</button>
+                </div>
+            </div>
+            <div class="uk-position-relative uk-visible-toggle uk-light uk-width-1-2@m utk-slider-limite-x" tabindex="-1" uk-slider="autoplay: true;center: true;finite: true;">
+                <div class="uk-slider-items uk-grid uk-grid-small">
+                    <div class="uk-width-1-2">
+                        <div class="uk-panel">
+                            <img src="https://placehold.co/356x600" width="356" height="600" alt="">
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <div class="uk-panel">
+                            <img src="https://placehold.co/356x600" width="356" height="600" alt="">
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <div class="uk-panel">
+                            <img src="https://placehold.co/356x600" width="356" height="600" alt="">
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <div class="uk-panel">
+                            <img src="https://placehold.co/356x600" width="356" height="600" alt="">
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <div class="uk-panel">
+                            <img src="https://placehold.co/356x600" width="356" height="600" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
