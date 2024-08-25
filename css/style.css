@@ -38,6 +38,7 @@
     margin: 0;
     padding: 10px;
     padding-left: 0;
+    z-index: 1000 !important;
 }
 
 .uk-container .uk-switcher .uk-container {

@@ -6,7 +6,7 @@
     overflow: hidden !important;
 }
 
-.utk-slider-limite-x::before {
+.utk-slider-limite-x::before, .utk-slider-limite-x::after {
     content: "";
     z-index: 5;
     background: linear-gradient(90deg, rgb(248, 248, 248) 0%, rgba(243,243,243,0) 100%);
@@ -17,13 +17,12 @@
     top: 0;
 }
 
+.utk-slider-limite-x::before {
+    left: 0;
+    top: 0;
+}
+
 .utk-slider-limite-x::after {
-    content: "";
-    z-index: 5;
-    background: linear-gradient(-90deg, rgb(248, 248, 248) 0%, rgba(243,243,243,0) 100%);
-    width: 10%;
-    height: 100%;
-    position: absolute;
     right: 0;
     top: 0;
 }
