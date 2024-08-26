@@ -1,0 +1,2353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A seção CTA (Call to Action, ou Chamada para Ação em português) de um site é um elemento essencial de design e marketing que convida os visitantes a realizar uma ação específica. Esta ação pode variar desde comprar um produto, assinar uma newsletter, baixar um e-book, registrar-se em um serviço, entre outras atividades que promovem o engajamento do usuário com o site. Geralmente, as CTAs são apresentadas como botões, links ou banners estrategicamente posicionados para maximizar sua visibilidade e eficácia.">
+    <meta name="author" content="Leandro do Nascimento">
+    <link rel="shortcut icon" href="../img/logo-primary.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <!-- UIkit -->
+    <link rel="stylesheet" href="../css/uikit.min.css">
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Utterkit -->
+    <link rel="stylesheet" href="../css/utterkit.css">
+
+    <title>CTA | Utterkit</title>
+</head>
+<body>
+    <section class="uk-section-primary uk-section-primary">
+        <div id="offcanvas-push" uk-offcanvas="mode: push">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center uk-background-primary">
+                <button class="uk-offcanvas-close uk-close-large" type="button" uk-close uk-toggle="cls: uk-close-large; mode: media; media: @s"></button>
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" uk-nav>
+                    <li><a href="../index.html">Home</a></li>
+                    <hr>
+                    <li><a href="../instalacao.html">Instalação</a></li>
+                    <hr>
+                    <li class="uk-active"><a href="../recursos.html">Recursos</a></li>
+                    <hr>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <hr>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <hr>
+                    <li><a href="../termos-e-uso.html">Termos e Uso</a></li>
+                    <hr>
+                    <li><a href="../licenca.html">Licença</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="uk-navbar-container uk-navbar-transparent">
+            <div class="uk-container uk-container-large">
+                <div class="uk-margin-left uk-margin-right">
+                    <div uk-navbar="mode: click" class="uk-navbar uk-flex uk-flex-middle uk-flex-between">
+                        <div>
+                            <a href="../index.html" class="uk-navbar-item uk-logo">
+                                <img src="../img/logo-secondary.svg" width="30" height="30" alt="Logo Utterkit">
+                                <span class="uk-margin-small-left">Utterkit</span>
+                            </a>
+                        </div>
+                        <a href="#offcanvas-push" uk-toggle>
+                            <span uk-icon="icon: menu; ratio: 2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="uk-section uk-section-medium">
+        <div class="uk-container uk-container-medium">
+            <nav aria-label="Breadcrumb">
+                <ul class="uk-breadcrumb">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../recursos.html">Recursos</a></li>
+                    <li><span aria-current="page">CTA</span></li>
+                </ul>
+            </nav>
+            <h1 class="uk-heading-large">CTA</h1>
+            <h2>Convide os usuários a realizar alguma tarefa</h2>
+            <p>
+                A seção <b>CTA</b> (<em>Call to Action</em>, ou <em>Chamada para Ação</em> em português) de um site é um elemento essencial de design e marketing
+                que convida os visitantes a realizar uma ação específica. Esta ação pode variar desde comprar um produto, assinar uma newsletter, baixar um e-book,
+                registrar-se em um serviço, entre outras atividades que promovem o engajamento do usuário com o site. Geralmente, as CTAs são apresentadas como botões,
+                links ou banners estrategicamente posicionados para maximizar sua visibilidade e eficácia.
+            </p>
+            <hr class="uk-margin-medium-top">
+            <div>
+                <h2 uk-sticky="end: true; overflow-flip: false; offset: -1" class="uk-margin-small-bottom utk-owner-blurred-effect-owner">CTA com Texto ou Ícone</h2>
+                <div class="uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-texto-ou-icone-estilo-01">Estilo 01</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-section-small uk-section-muted">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-child-width-1-2@s">
+                                        <div>
+                                            <span class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</span>
+                                        </div>
+                                        <div class="uk-hidden@s uk-margin-large-bottom"></div>
+                                        <div class="uk-text-center uk-text-right@s">
+                                            <a href="#" class="uk-button uk-button-primary uk-border-pill uk-width-auto@s">See a demo</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen1"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share1"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen1" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-section-small uk-section-muted">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-child-width-1-2@s">
+                                        <div>
+                                            <span class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</span>
+                                        </div>
+                                        <div class="uk-hidden@s uk-margin-large-bottom"></div>
+                                        <div class="uk-text-center uk-text-right@s">
+                                            <a href="#" class="uk-button uk-button-primary uk-border-pill uk-width-auto@s">See a demo</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share1" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-01
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-01
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-section-small uk-section-muted">
+                                <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-child-width-1-2@s">
+                                    <div>
+                                        <span class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</span>
+                                    </div>
+                                    <div class="uk-hidden@s uk-margin-large-bottom"></div>
+                                    <div class="uk-text-center uk-text-right@s">
+                                        <a href="#" class="uk-button uk-button-primary uk-border-pill uk-width-auto@s">See a demo</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-section-small uk-section-muted&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-child-width-1-2@s&#x22;&#x3E;
+            &#x3C;div&#x3E;
+                &#x3C;span class=&#x22;uk-text-lead&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!&#x3C;/span&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-hidden@s uk-margin-large-bottom&#x22;&#x3E;&#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-text-center uk-text-right@s&#x22;&#x3E;
+                &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-primary uk-border-pill uk-width-auto@s&#x22;&#x3E;See a demo&#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-texto-ou-icone-estilo-02">Estilo 02</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-section-small uk-section-muted">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-between uk-child-width-1-2@s">
+                                        <div>
+                                            <h2 class="uk-heading-small">Lorem ipsum dolor</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                        </div>
+                                        <div class="uk-hidden@s uk-margin-large-bottom"></div>
+                                        <div class="uk-flex uk-flex-wrap uk-flex-column uk-width-1-3@s">
+                                            <a href="#" class="uk-button uk-button-primary uk-border-pill">See a demo</a>
+                                            <a href="#" class="uk-button uk-button-default uk-border-pill uk-margin-small-top">Stay in touch</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen2"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share2"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen2" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-section-small uk-section-muted">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-between uk-child-width-1-2@s">
+                                        <div>
+                                            <h2 class="uk-heading-small">Lorem ipsum dolor</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                        </div>
+                                        <div class="uk-hidden@s uk-margin-large-bottom"></div>
+                                        <div class="uk-flex uk-flex-wrap uk-flex-column uk-width-1-3@s">
+                                            <a href="#" class="uk-button uk-button-primary uk-border-pill">See a demo</a>
+                                            <a href="#" class="uk-button uk-button-default uk-border-pill uk-margin-small-top">Stay in touch</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share2" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-02
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-02
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-section-small uk-section-muted">
+                                <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-between uk-child-width-1-2@s">
+                                    <div>
+                                        <h2 class="uk-heading-small">Lorem ipsum dolor</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                    </div>
+                                    <div class="uk-hidden@s uk-margin-large-bottom"></div>
+                                    <div class="uk-flex uk-flex-wrap uk-flex-column uk-width-1-3@s">
+                                        <a href="#" class="uk-button uk-button-primary uk-border-pill">See a demo</a>
+                                        <a href="#" class="uk-button uk-button-default uk-border-pill uk-margin-small-top">Stay in touch</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-section-small uk-section-muted&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-between uk-child-width-1-2@s&#x22;&#x3E;
+            &#x3C;div&#x3E;
+                &#x3C;h2 class=&#x22;uk-heading-small&#x22;&#x3E;Lorem ipsum dolor&#x3C;/h2&#x3E;
+                &#x3C;p&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!&#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-hidden@s uk-margin-large-bottom&#x22;&#x3E;&#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-flex uk-flex-wrap uk-flex-column uk-width-1-3@s&#x22;&#x3E;
+                &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-primary uk-border-pill&#x22;&#x3E;See a demo&#x3C;/a&#x3E;
+                &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-default uk-border-pill uk-margin-small-top&#x22;&#x3E;Stay in touch&#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-texto-ou-icone-estilo-03">Estilo 03</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-section-small">
+                                    <div class="uk-container uk-container-large">
+                                        <div class="uk-section-muted uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-flex-between uk-child-width-1-2@s uk-border-rounded">
+                                            <div>
+                                                <h2 class="uk-heading-small">Lorem ipsum dolor sit amet adipisicing</h2>
+                                            </div>
+                                            <div class="uk-hidden@s uk-margin-large-bottom"></div>
+                                            <div class="uk-flex-column uk-width-1-3@s">
+                                                <ul class="uk-list uk-list-square uk-list-large">
+                                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                                                    <li>Lorem, ipsum dolor.</li>
+                                                    <li>Lorem ipsum dolor sit amet.</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-primary uk-button-large uk-width-auto uk-border-rounded uk-margin-small-top">See a demo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen3"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share3"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen3" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-section-small">
+                                    <div class="uk-container uk-container-large">
+                                        <div class="uk-section-muted uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-flex-between uk-child-width-1-2@s uk-border-rounded">
+                                            <div>
+                                                <h2 class="uk-heading-small">Lorem ipsum dolor sit amet adipisicing</h2>
+                                            </div>
+                                            <div class="uk-hidden@s uk-margin-large-bottom"></div>
+                                            <div class="uk-flex-column uk-width-1-3@s">
+                                                <ul class="uk-list uk-list-square uk-list-large">
+                                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                                                    <li>Lorem, ipsum dolor.</li>
+                                                    <li>Lorem ipsum dolor sit amet.</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-primary uk-button-large uk-width-auto uk-border-rounded uk-margin-small-top">See a demo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share3" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-03
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-03
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-section-small">
+                                <div class="uk-container uk-container-large">
+                                    <div class="uk-section-muted uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-flex-between uk-child-width-1-2@s uk-border-rounded">
+                                        <div>
+                                            <h2 class="uk-heading-small">Lorem ipsum dolor sit amet adipisicing</h2>
+                                        </div>
+                                        <div class="uk-hidden@s uk-margin-large-bottom"></div>
+                                        <div class="uk-flex-column uk-width-1-3@s">
+                                            <ul class="uk-list uk-list-square uk-list-large">
+                                                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                                                <li>Lorem, ipsum dolor.</li>
+                                                <li>Lorem ipsum dolor sit amet.</li>
+                                            </ul>
+                                            <a href="#" class="uk-button uk-button-primary uk-button-large uk-width-auto uk-border-rounded uk-margin-small-top">See a demo</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-section-small&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-section-muted uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-flex-between uk-child-width-1-2@s uk-border-rounded&#x22;&#x3E;
+                &#x3C;div&#x3E;
+                    &#x3C;h2 class=&#x22;uk-heading-small&#x22;&#x3E;Lorem ipsum dolor sit amet adipisicing&#x3C;/h2&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-hidden@s uk-margin-large-bottom&#x22;&#x3E;&#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex-column uk-width-1-3@s&#x22;&#x3E;
+                    &#x3C;ul class=&#x22;uk-list uk-list-square uk-list-large&#x22;&#x3E;
+                        &#x3C;li&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing.&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;Lorem, ipsum dolor.&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;Lorem ipsum dolor sit amet.&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-primary uk-button-large uk-width-auto uk-border-rounded uk-margin-small-top&#x22;&#x3E;See a demo&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-texto-ou-icone-estilo-04">Estilo 04</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-section-small uk-section-muted">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                        <div class="uk-width-3-5@s">
+                                            <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                            <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                            <a href="#" class="uk-button uk-button-large uk-button-primary uk-border-pill uk-margin-top">See a demo</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen4"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share4"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen4" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-section-small uk-section-muted">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                        <div class="uk-width-3-5@s">
+                                            <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                            <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                            <a href="#" class="uk-button uk-button-large uk-button-primary uk-border-pill uk-margin-top">See a demo</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share4" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-04
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-04
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-section-small uk-section-muted">
+                                <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                    <div class="uk-width-3-5@s">
+                                        <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                        <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                        <a href="#" class="uk-button uk-button-large uk-button-primary uk-border-pill uk-margin-top">See a demo</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-section-small uk-section-muted&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-width-3-5@s&#x22;&#x3E;
+                &#x3C;h2 class=&#x22;uk-heading-small&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing&#x3C;/h2&#x3E;
+                &#x3C;p class=&#x22;uk-text-lead&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!&#x3C;/p&#x3E;
+                &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-large uk-button-primary uk-border-pill uk-margin-top&#x22;&#x3E;See a demo&#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-texto-ou-icone-estilo-05">Estilo 05</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-section-muted">
+                                    <div class="uk-container uk-container-large">
+                                        <div class="uk-panel uk-margin-bottom">
+                                            <h2 class="uk-heading-small uk-padding-small">Lorem ipsum dolor sit amet</h2>
+                                        </div>
+                                        <div class="uk-flex uk-flex-wrap uk-child-width-1-2@m">
+                                            <div class="uk-padding-small">
+                                                <div class="uk-tile uk-tile-primary uk-padding-large uk-border-rounded">
+                                                    <span uk-icon="icon: eye; ratio: 2"></span>
+                                                    <h2 class="uk-margin-top">Look in more detail</h2>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, eveniet? Lorem ipsum dolor sit.
+                                                    </p>
+                                                    <a href="#" class="uk-button uk-button-primary uk-border-pill uk-margin-top">See a demo</a>
+                                                </div>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <div class="uk-tile uk-tile-secondary uk-padding-large uk-border-rounded">
+                                                    <span uk-icon="icon: calendar; ratio: 2"></span>
+                                                    <h2 class="uk-margin-top">Follow the day</h2>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, eveniet? Lorem ipsum dolor sit.
+                                                    </p>
+                                                    <a href="#" class="uk-button uk-button-primary uk-border-pill uk-margin-top">Stay in touch</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen5"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share5"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen5" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-section-muted">
+                                    <div class="uk-container uk-container-large">
+                                        <div class="uk-panel uk-margin-bottom">
+                                            <h2 class="uk-heading-small uk-padding-small">Lorem ipsum dolor sit amet</h2>
+                                        </div>
+                                        <div class="uk-flex uk-flex-wrap uk-child-width-1-2@m">
+                                            <div class="uk-padding-small">
+                                                <div class="uk-tile uk-tile-primary uk-padding-large uk-border-rounded">
+                                                    <span uk-icon="icon: eye; ratio: 2"></span>
+                                                    <h2 class="uk-margin-top">Look in more detail</h2>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, eveniet? Lorem ipsum dolor sit.
+                                                    </p>
+                                                    <a href="#" class="uk-button uk-button-primary uk-border-pill uk-margin-top">See a demo</a>
+                                                </div>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <div class="uk-tile uk-tile-secondary uk-padding-large uk-border-rounded">
+                                                    <span uk-icon="icon: calendar; ratio: 2"></span>
+                                                    <h2 class="uk-margin-top">Follow the day</h2>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, eveniet? Lorem ipsum dolor sit.
+                                                    </p>
+                                                    <a href="#" class="uk-button uk-button-primary uk-border-pill uk-margin-top">Stay in touch</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share5" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-05
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-05
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-section-muted">
+                                <div class="uk-container uk-container-large">
+                                    <div class="uk-panel uk-margin-bottom">
+                                        <h2 class="uk-heading-small uk-padding-small">Lorem ipsum dolor sit amet</h2>
+                                    </div>
+                                    <div class="uk-flex uk-flex-wrap uk-child-width-1-2@m">
+                                        <div class="uk-padding-small">
+                                            <div class="uk-tile uk-tile-primary uk-padding-large uk-border-rounded">
+                                                <span uk-icon="icon: eye; ratio: 2"></span>
+                                                <h2 class="uk-margin-top">Look in more detail</h2>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, eveniet? Lorem ipsum dolor sit.
+                                                </p>
+                                                <a href="#" class="uk-button uk-button-primary uk-border-pill uk-margin-top">See a demo</a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-tile uk-tile-secondary uk-padding-large uk-border-rounded">
+                                                <span uk-icon="icon: calendar; ratio: 2"></span>
+                                                <h2 class="uk-margin-top">Follow the day</h2>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, eveniet? Lorem ipsum dolor sit.
+                                                </p>
+                                                <a href="#" class="uk-button uk-button-primary uk-border-pill uk-margin-top">Stay in touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-section-muted&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-panel uk-margin-bottom&#x22;&#x3E;
+                &#x3C;h2 class=&#x22;uk-heading-small uk-padding-small&#x22;&#x3E;Lorem ipsum dolor sit amet&#x3C;/h2&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-flex uk-flex-wrap uk-child-width-1-2@m&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                    &#x3C;div class=&#x22;uk-tile uk-tile-primary uk-padding-large uk-border-rounded&#x22;&#x3E;
+                        &#x3C;span uk-icon=&#x22;icon: eye; ratio: 2&#x22;&#x3E;&#x3C;/span&#x3E;
+                        &#x3C;h2 class=&#x22;uk-margin-top&#x22;&#x3E;Look in more detail&#x3C;/h2&#x3E;
+                        &#x3C;p&#x3E;
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, eveniet? Lorem ipsum dolor sit.
+                        &#x3C;/p&#x3E;
+                        &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-primary uk-border-pill uk-margin-top&#x22;&#x3E;See a demo&#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                    &#x3C;div class=&#x22;uk-tile uk-tile-secondary uk-padding-large uk-border-rounded&#x22;&#x3E;
+                        &#x3C;span uk-icon=&#x22;icon: calendar; ratio: 2&#x22;&#x3E;&#x3C;/span&#x3E;
+                        &#x3C;h2 class=&#x22;uk-margin-top&#x22;&#x3E;Follow the day&#x3C;/h2&#x3E;
+                        &#x3C;p&#x3E;
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, eveniet? Lorem ipsum dolor sit.
+                        &#x3C;/p&#x3E;
+                        &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-primary uk-border-pill uk-margin-top&#x22;&#x3E;Stay in touch&#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-texto-ou-icone-estilo-06">Estilo 06</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-section-small uk-section-muted">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                        <div class="uk-flex uk-flex-wrap uk-flex-center uk-margin-medium-bottom">
+                                            <div class="uk-padding-small uk-width-large">
+                                                <div class="uk-tile uk-tile-default uk-padding-small uk-border-pill">
+                                                    <div class="uk-panel">
+                                                        <p class="uk-text-lead uk-margin-remove uk-text-primary">Worldwide revenue</p>
+                                                        <h4 class="uk-heading-large uk-margin-remove uk-text-primary">$6B+</h4>
+                                                        <p class="uk-text-lead uk-text-primary">Lorem, ipsum</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="uk-padding-small uk-width-large">
+                                                <div class="uk-tile uk-tile-default uk-padding-small uk-border-pill">
+                                                    <div class="uk-panel">
+                                                        <p class="uk-text-lead uk-margin-remove uk-text-primary">Every hour</p>
+                                                        <h4 class="uk-heading-large uk-margin-remove uk-text-primary">$1000k</h4>
+                                                        <p class="uk-text-lead uk-text-primary">Lorem, ipsum</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="uk-padding-small uk-width-large">
+                                                <div class="uk-tile uk-tile-default uk-padding-small uk-border-pill">
+                                                    <div class="uk-panel">
+                                                        <p class="uk-text-lead uk-margin-remove uk-text-primary">Spend all day</p>
+                                                        <h4 class="uk-heading-large uk-margin-remove uk-text-primary">75M</h4>
+                                                        <p class="uk-text-lead uk-text-primary">Lorem, ipsum</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-panel uk-width-3-5@s">
+                                            <h2 class="uk-heading-medium">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                            <a href="#" class="uk-button uk-button-primary uk-button-large uk-border-pill uk-margin-top">See a demo</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen6"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share6"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen6" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-section-small uk-section-muted">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                        <div class="uk-flex uk-flex-wrap uk-flex-center uk-margin-medium-bottom">
+                                            <div class="uk-padding-small uk-width-large">
+                                                <div class="uk-tile uk-tile-default uk-padding-small uk-border-pill">
+                                                    <div class="uk-panel">
+                                                        <p class="uk-text-lead uk-margin-remove uk-text-primary">Worldwide revenue</p>
+                                                        <h4 class="uk-heading-large uk-margin-remove uk-text-primary">$6B+</h4>
+                                                        <p class="uk-text-lead uk-text-primary">Lorem, ipsum</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="uk-padding-small uk-width-large">
+                                                <div class="uk-tile uk-tile-default uk-padding-small uk-border-pill">
+                                                    <div class="uk-panel">
+                                                        <p class="uk-text-lead uk-margin-remove uk-text-primary">Every hour</p>
+                                                        <h4 class="uk-heading-large uk-margin-remove uk-text-primary">$1000k</h4>
+                                                        <p class="uk-text-lead uk-text-primary">Lorem, ipsum</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="uk-padding-small uk-width-large">
+                                                <div class="uk-tile uk-tile-default uk-padding-small uk-border-pill">
+                                                    <div class="uk-panel">
+                                                        <p class="uk-text-lead uk-margin-remove uk-text-primary">Spend all day</p>
+                                                        <h4 class="uk-heading-large uk-margin-remove uk-text-primary">75M</h4>
+                                                        <p class="uk-text-lead uk-text-primary">Lorem, ipsum</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-panel uk-width-3-5@s">
+                                            <h2 class="uk-heading-medium">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                            <a href="#" class="uk-button uk-button-primary uk-button-large uk-border-pill uk-margin-top">See a demo</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share6" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-06
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-06
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-section-small uk-section-muted">
+                                <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                    <div class="uk-flex uk-flex-wrap uk-flex-center uk-margin-medium-bottom">
+                                        <div class="uk-padding-small uk-width-large">
+                                            <div class="uk-tile uk-tile-default uk-padding-small uk-border-pill">
+                                                <div class="uk-panel">
+                                                    <p class="uk-text-lead uk-margin-remove uk-text-primary">Worldwide revenue</p>
+                                                    <h4 class="uk-heading-large uk-margin-remove uk-text-primary">$6B+</h4>
+                                                    <p class="uk-text-lead uk-text-primary">Lorem, ipsum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small uk-width-large">
+                                            <div class="uk-tile uk-tile-default uk-padding-small uk-border-pill">
+                                                <div class="uk-panel">
+                                                    <p class="uk-text-lead uk-margin-remove uk-text-primary">Every hour</p>
+                                                    <h4 class="uk-heading-large uk-margin-remove uk-text-primary">$1000k</h4>
+                                                    <p class="uk-text-lead uk-text-primary">Lorem, ipsum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small uk-width-large">
+                                            <div class="uk-tile uk-tile-default uk-padding-small uk-border-pill">
+                                                <div class="uk-panel">
+                                                    <p class="uk-text-lead uk-margin-remove uk-text-primary">Spend all day</p>
+                                                    <h4 class="uk-heading-large uk-margin-remove uk-text-primary">75M</h4>
+                                                    <p class="uk-text-lead uk-text-primary">Lorem, ipsum</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-panel uk-width-3-5@s">
+                                        <h2 class="uk-heading-medium">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                        <a href="#" class="uk-button uk-button-primary uk-button-large uk-border-pill uk-margin-top">See a demo</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-section-small uk-section-muted&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-flex uk-flex-wrap uk-flex-center uk-margin-medium-bottom&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small uk-width-large&#x22;&#x3E;
+                    &#x3C;div class=&#x22;uk-tile uk-tile-default uk-padding-small uk-border-pill&#x22;&#x3E;
+                        &#x3C;div class=&#x22;uk-panel&#x22;&#x3E;
+                            &#x3C;p class=&#x22;uk-text-lead uk-margin-remove uk-text-primary&#x22;&#x3E;Worldwide revenue&#x3C;/p&#x3E;
+                            &#x3C;h4 class=&#x22;uk-heading-large uk-margin-remove uk-text-primary&#x22;&#x3E;$6B+&#x3C;/h4&#x3E;
+                            &#x3C;p class=&#x22;uk-text-lead uk-text-primary&#x22;&#x3E;Lorem, ipsum&#x3C;/p&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small uk-width-large&#x22;&#x3E;
+                    &#x3C;div class=&#x22;uk-tile uk-tile-default uk-padding-small uk-border-pill&#x22;&#x3E;
+                        &#x3C;div class=&#x22;uk-panel&#x22;&#x3E;
+                            &#x3C;p class=&#x22;uk-text-lead uk-margin-remove uk-text-primary&#x22;&#x3E;Every hour&#x3C;/p&#x3E;
+                            &#x3C;h4 class=&#x22;uk-heading-large uk-margin-remove uk-text-primary&#x22;&#x3E;$1000k&#x3C;/h4&#x3E;
+                            &#x3C;p class=&#x22;uk-text-lead uk-text-primary&#x22;&#x3E;Lorem, ipsum&#x3C;/p&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small uk-width-large&#x22;&#x3E;
+                    &#x3C;div class=&#x22;uk-tile uk-tile-default uk-padding-small uk-border-pill&#x22;&#x3E;
+                        &#x3C;div class=&#x22;uk-panel&#x22;&#x3E;
+                            &#x3C;p class=&#x22;uk-text-lead uk-margin-remove uk-text-primary&#x22;&#x3E;Spend all day&#x3C;/p&#x3E;
+                            &#x3C;h4 class=&#x22;uk-heading-large uk-margin-remove uk-text-primary&#x22;&#x3E;75M&#x3C;/h4&#x3E;
+                            &#x3C;p class=&#x22;uk-text-lead uk-text-primary&#x22;&#x3E;Lorem, ipsum&#x3C;/p&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-panel uk-width-3-5@s&#x22;&#x3E;
+                &#x3C;h2 class=&#x22;uk-heading-medium&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing&#x3C;/h2&#x3E;
+                &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-primary uk-button-large uk-border-pill uk-margin-top&#x22;&#x3E;See a demo&#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-texto-ou-icone-estilo-07">Estilo 07</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-section-small uk-section-muted">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                        <div class="uk-width-3-5@m">
+                                            <h2 class="uk-heading-large">Lorem ipsum</h2>
+                                            <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                            <form action="script.php" method="post">
+                                                <div class="uk-margin">
+                                                    <input class="uk-input uk-width-2-3@s uk-border-pill" name="email-field" type="text" placeholder="Email Address" aria-label="Email Address">
+                                                    <div class="uk-margin-small-top uk-hidden@s"></div>
+                                                    <button type="submit" class="uk-button uk-width-auto@s uk-button-primary uk-border-pill">Send</button>
+                                                </div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cupiditate incidunt ipsum sapiente, velit blanditiis cumque
+                                                    voluptates, aspernatur voluptatibus adipisci aut eos sint officiis aliquid ab vitae consequatur ut at neque. Debitis, molestiae!
+                                                </p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen7"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share7"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen7" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-section-small uk-section-muted">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                        <div class="uk-width-3-5@m">
+                                            <h2 class="uk-heading-large">Lorem ipsum</h2>
+                                            <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                            <form action="script.php" method="post">
+                                                <div class="uk-margin">
+                                                    <input class="uk-input uk-width-2-3@s uk-border-pill" name="email-field" type="text" placeholder="Email Address" aria-label="Email Address">
+                                                    <div class="uk-margin-small-top uk-hidden@s"></div>
+                                                    <button type="submit" class="uk-button uk-width-auto@s uk-button-primary uk-border-pill">Send</button>
+                                                </div>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cupiditate incidunt ipsum sapiente, velit blanditiis cumque
+                                                    voluptates, aspernatur voluptatibus adipisci aut eos sint officiis aliquid ab vitae consequatur ut at neque. Debitis, molestiae!
+                                                </p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share7" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-07
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-07
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-section-small uk-section-muted">
+                                <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                    <div class="uk-width-3-5@m">
+                                        <h2 class="uk-heading-large">Lorem ipsum</h2>
+                                        <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                        <form action="script.php" method="post">
+                                            <div class="uk-margin">
+                                                <input class="uk-input uk-width-2-3@s uk-border-pill" name="email-field" type="text" placeholder="Email Address" aria-label="Email Address">
+                                                <div class="uk-margin-small-top uk-hidden@s"></div>
+                                                <button type="submit" class="uk-button uk-width-auto@s uk-button-primary uk-border-pill">Send</button>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cupiditate incidunt ipsum sapiente, velit blanditiis cumque
+                                                voluptates, aspernatur voluptatibus adipisci aut eos sint officiis aliquid ab vitae consequatur ut at neque. Debitis, molestiae!
+                                            </p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-section-small uk-section-muted&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-width-3-5@m&#x22;&#x3E;
+                &#x3C;h2 class=&#x22;uk-heading-large&#x22;&#x3E;Lorem ipsum&#x3C;/h2&#x3E;
+                &#x3C;p class=&#x22;uk-text-lead&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!&#x3C;/p&#x3E;
+                &#x3C;form action=&#x22;script.php&#x22; method=&#x22;post&#x22;&#x3E;
+                    &#x3C;div class=&#x22;uk-margin&#x22;&#x3E;
+                        &#x3C;input class=&#x22;uk-input uk-width-2-3@s uk-border-pill&#x22; name=&#x22;email-field&#x22; type=&#x22;text&#x22; placeholder=&#x22;Email Address&#x22; aria-label=&#x22;Email Address&#x22;&#x3E;
+                        &#x3C;div class=&#x22;uk-margin-small-top uk-hidden@s&#x22;&#x3E;&#x3C;/div&#x3E;
+                        &#x3C;button type=&#x22;submit&#x22; class=&#x22;uk-button uk-width-auto@s uk-button-primary uk-border-pill&#x22;&#x3E;Send&#x3C;/button&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;p&#x3E;
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cupiditate incidunt ipsum sapiente, velit blanditiis cumque
+                        voluptates, aspernatur voluptatibus adipisci aut eos sint officiis aliquid ab vitae consequatur ut at neque. Debitis, molestiae!
+                    &#x3C;/p&#x3E;
+                &#x3C;/form&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-texto-ou-icone-estilo-08">Estilo 08</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-section-small uk-section-muted">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                        <div class="">
+                                            <h2 class="uk-heading-small uk-width-3-5@s uk-margin-auto">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                            <div class="uk-flex uk-flex-wrap uk-flex-center uk-child-width-1-2@s uk-child-width-1-4@l uk-text-left">
+                                                <div class="uk-padding uk-flex uk-flex-center">
+                                                    <div class="uk-margin-right">
+                                                        <span uk-icon="icon: settings; ratio: 2"></span>
+                                                    </div>
+                                                    <div>
+                                                        <h3>Customize</h3>
+                                                        Lorem ipsum dolor sit, amet.
+                                                    </div>
+                                                </div>
+                                                <div class="uk-padding uk-flex uk-flex-center">
+                                                    <div class="uk-margin-right">
+                                                        <span uk-icon="icon: credit-card; ratio: 2"></span>
+                                                    </div>
+                                                    <div>
+                                                        <h3>More card</h3>
+                                                        Lorem ipsum dolor sit, amet.
+                                                    </div>
+                                                </div>
+                                                <div class="uk-padding uk-flex uk-flex-center">
+                                                    <div class="uk-margin-right">
+                                                        <span uk-icon="icon: world; ratio: 2"></span>
+                                                    </div>
+                                                    <div>
+                                                        <h3>Use worldwide</h3>
+                                                        Lorem ipsum dolor sit, amet.
+                                                    </div>
+                                                </div>
+                                                <div class="uk-padding uk-flex uk-flex-center">
+                                                    <div class="uk-margin-right">
+                                                        <span uk-icon="icon: history; ratio: 2"></span>
+                                                    </div>
+                                                    <div>
+                                                        <h3>future history</h3>
+                                                        Lorem ipsum dolor sit, amet.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="uk-button uk-button-large uk-button-primary uk-border-pill">See a demo</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen8"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share8"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen8" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-section-small uk-section-muted">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                        <div class="">
+                                            <h2 class="uk-heading-small uk-width-3-5@s uk-margin-auto">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                            <div class="uk-flex uk-flex-wrap uk-flex-center uk-child-width-1-2@s uk-child-width-1-4@l uk-text-left">
+                                                <div class="uk-padding uk-flex uk-flex-center">
+                                                    <div class="uk-margin-right">
+                                                        <span uk-icon="icon: settings; ratio: 2"></span>
+                                                    </div>
+                                                    <div>
+                                                        <h3>Customize</h3>
+                                                        Lorem ipsum dolor sit, amet.
+                                                    </div>
+                                                </div>
+                                                <div class="uk-padding uk-flex uk-flex-center">
+                                                    <div class="uk-margin-right">
+                                                        <span uk-icon="icon: credit-card; ratio: 2"></span>
+                                                    </div>
+                                                    <div>
+                                                        <h3>More card</h3>
+                                                        Lorem ipsum dolor sit, amet.
+                                                    </div>
+                                                </div>
+                                                <div class="uk-padding uk-flex uk-flex-center">
+                                                    <div class="uk-margin-right">
+                                                        <span uk-icon="icon: world; ratio: 2"></span>
+                                                    </div>
+                                                    <div>
+                                                        <h3>Use worldwide</h3>
+                                                        Lorem ipsum dolor sit, amet.
+                                                    </div>
+                                                </div>
+                                                <div class="uk-padding uk-flex uk-flex-center">
+                                                    <div class="uk-margin-right">
+                                                        <span uk-icon="icon: history; ratio: 2"></span>
+                                                    </div>
+                                                    <div>
+                                                        <h3>future history</h3>
+                                                        Lorem ipsum dolor sit, amet.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="uk-button uk-button-large uk-button-primary uk-border-pill">See a demo</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share8" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-08
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-texto-ou-icone-estilo-08
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-section-small uk-section-muted">
+                                <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                    <div class="">
+                                        <h2 class="uk-heading-small uk-width-3-5@s uk-margin-auto">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                        <div class="uk-flex uk-flex-wrap uk-flex-center uk-child-width-1-2@s uk-child-width-1-4@l uk-text-left">
+                                            <div class="uk-padding uk-flex uk-flex-center">
+                                                <div class="uk-margin-right">
+                                                    <span uk-icon="icon: settings; ratio: 2"></span>
+                                                </div>
+                                                <div>
+                                                    <h3>Customize</h3>
+                                                    Lorem ipsum dolor sit, amet.
+                                                </div>
+                                            </div>
+                                            <div class="uk-padding uk-flex uk-flex-center">
+                                                <div class="uk-margin-right">
+                                                    <span uk-icon="icon: credit-card; ratio: 2"></span>
+                                                </div>
+                                                <div>
+                                                    <h3>More card</h3>
+                                                    Lorem ipsum dolor sit, amet.
+                                                </div>
+                                            </div>
+                                            <div class="uk-padding uk-flex uk-flex-center">
+                                                <div class="uk-margin-right">
+                                                    <span uk-icon="icon: world; ratio: 2"></span>
+                                                </div>
+                                                <div>
+                                                    <h3>Use worldwide</h3>
+                                                    Lorem ipsum dolor sit, amet.
+                                                </div>
+                                            </div>
+                                            <div class="uk-padding uk-flex uk-flex-center">
+                                                <div class="uk-margin-right">
+                                                    <span uk-icon="icon: history; ratio: 2"></span>
+                                                </div>
+                                                <div>
+                                                    <h3>future history</h3>
+                                                    Lorem ipsum dolor sit, amet.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="uk-button uk-button-large uk-button-primary uk-border-pill">See a demo</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-section-small uk-section-muted&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center&#x22;&#x3E;
+            &#x3C;div class=&#x22;&#x22;&#x3E;
+                &#x3C;h2 class=&#x22;uk-heading-small uk-width-3-5@s uk-margin-auto&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing&#x3C;/h2&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-wrap uk-flex-center uk-child-width-1-2@s uk-child-width-1-4@l uk-text-left&#x22;&#x3E;
+                    &#x3C;div class=&#x22;uk-padding uk-flex uk-flex-center&#x22;&#x3E;
+                        &#x3C;div class=&#x22;uk-margin-right&#x22;&#x3E;
+                            &#x3C;span uk-icon=&#x22;icon: settings; ratio: 2&#x22;&#x3E;&#x3C;/span&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;div&#x3E;
+                            &#x3C;h3&#x3E;Customize&#x3C;/h3&#x3E;
+                            Lorem ipsum dolor sit, amet.
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;uk-padding uk-flex uk-flex-center&#x22;&#x3E;
+                        &#x3C;div class=&#x22;uk-margin-right&#x22;&#x3E;
+                            &#x3C;span uk-icon=&#x22;icon: credit-card; ratio: 2&#x22;&#x3E;&#x3C;/span&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;div&#x3E;
+                            &#x3C;h3&#x3E;More card&#x3C;/h3&#x3E;
+                            Lorem ipsum dolor sit, amet.
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;uk-padding uk-flex uk-flex-center&#x22;&#x3E;
+                        &#x3C;div class=&#x22;uk-margin-right&#x22;&#x3E;
+                            &#x3C;span uk-icon=&#x22;icon: world; ratio: 2&#x22;&#x3E;&#x3C;/span&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;div&#x3E;
+                            &#x3C;h3&#x3E;Use worldwide&#x3C;/h3&#x3E;
+                            Lorem ipsum dolor sit, amet.
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;uk-padding uk-flex uk-flex-center&#x22;&#x3E;
+                        &#x3C;div class=&#x22;uk-margin-right&#x22;&#x3E;
+                            &#x3C;span uk-icon=&#x22;icon: history; ratio: 2&#x22;&#x3E;&#x3C;/span&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;div&#x3E;
+                            &#x3C;h3&#x3E;future history&#x3C;/h3&#x3E;
+                            Lorem ipsum dolor sit, amet.
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-large uk-button-primary uk-border-pill&#x22;&#x3E;See a demo&#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-margin-medium-top">
+                <h2 uk-sticky="end: true; overflow-flip: false; offset: -1" class="uk-margin-small-bottom utk-owner-blurred-effect-owner">CTA com Imagens</h2>
+                <div class="uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-imagens-estilo-01">Estilo 01</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-section-muted uk-padding-small">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-child-width-1-2@m">
+                                        <div>
+                                            <h2 class="uk-heading-small">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sunt</h2>
+                                            <a href="#" class="uk-button uk-button-primary uk-margin-top">See a demo</a>
+                                        </div>
+                                        <div class="uk-text-center uk-text-right@m uk-padding">
+                                            <img src="https://placehold.co/500x500" alt="">
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen9"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share9"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen9" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-section-muted uk-padding-small">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-child-width-1-2@m">
+                                        <div>
+                                            <h2 class="uk-heading-small">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sunt</h2>
+                                            <a href="#" class="uk-button uk-button-primary uk-margin-top">See a demo</a>
+                                        </div>
+                                        <div class="uk-text-center uk-text-right@m uk-padding">
+                                            <img src="https://placehold.co/500x500" alt="">
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share9" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-01
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-01
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-section-muted uk-padding-small">
+                                <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-child-width-1-2@m">
+                                    <div>
+                                        <h2 class="uk-heading-small">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sunt</h2>
+                                        <a href="#" class="uk-button uk-button-primary uk-margin-top">See a demo</a>
+                                    </div>
+                                    <div class="uk-text-center uk-text-right@m uk-padding">
+                                        <img src="https://placehold.co/500x500" alt="">
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-section-muted uk-padding-small&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-middle uk-child-width-1-2@m&#x22;&#x3E;
+            &#x3C;div&#x3E;
+                &#x3C;h2 class=&#x22;uk-heading-small&#x22;&#x3E;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sunt&#x3C;/h2&#x3E;
+                &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-primary uk-margin-top&#x22;&#x3E;See a demo&#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-text-center uk-text-right@m uk-padding&#x22;&#x3E;
+                &#x3C;img src=&#x22;https://placehold.co/500x500&#x22; alt=&#x22;&#x22;&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-imagens-estilo-02">Estilo 02</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-padding">
+                                    <div class="uk-container uk-container-large  uk-position-relative uk-background-primary uk-light uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-text-center uk-border-rounded uk-background-cover" style="background-image: url(https://placehold.co/1360x577);"  uk-height-viewport="offset-bottom: 11" >
+                                        <div class="uk-width-3-5@s">
+                                            <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                            <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                            <div class="uk-height-small uk-hidden@s"></div>
+                                            <a href="#" class="uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-rounded uk-margin-top uk-position-bottom-right uk-position-medium">See a demo</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen10"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share10"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen10" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-padding">
+                                    <div class="uk-container uk-container-large  uk-position-relative uk-background-primary uk-light uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-text-center uk-border-rounded uk-background-cover" style="background-image: url(https://placehold.co/1360x577);"  uk-height-viewport="offset-bottom: 11" >
+                                        <div class="uk-width-3-5@s">
+                                            <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                            <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                            <div class="uk-height-small uk-hidden@s"></div>
+                                            <a href="#" class="uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-rounded uk-margin-top uk-position-bottom-right uk-position-medium">See a demo</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share10" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-02
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-02
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-padding">
+                                <div class="uk-container uk-container-large  uk-position-relative uk-background-primary uk-light uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-text-center uk-border-rounded uk-background-cover" style="background-image: url(https://placehold.co/1360x577);"  uk-height-viewport="offset-bottom: 11" >
+                                    <div class="uk-width-3-5@s">
+                                        <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                        <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                        <div class="uk-height-small uk-hidden@s"></div>
+                                        <a href="#" class="uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-rounded uk-margin-top uk-position-bottom-right uk-position-medium">See a demo</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-padding&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large  uk-position-relative uk-background-primary uk-light uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-text-center uk-border-rounded uk-background-cover&#x22; style=&#x22;background-image: url(https://placehold.co/1360x577);&#x22;  uk-height-viewport=&#x22;offset-bottom: 11&#x22; &#x3E;
+            &#x3C;div class=&#x22;uk-width-3-5@s&#x22;&#x3E;
+                &#x3C;h2 class=&#x22;uk-heading-small&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing&#x3C;/h2&#x3E;
+                &#x3C;p class=&#x22;uk-text-lead&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!&#x3C;/p&#x3E;
+                &#x3C;div class=&#x22;uk-height-small uk-hidden@s&#x22;&#x3E;&#x3C;/div&#x3E;
+                &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-rounded uk-margin-top uk-position-bottom-right uk-position-medium&#x22;&#x3E;See a demo&#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-imagens-estilo-03">Estilo 03</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-padding">
+                                    <div class="uk-container uk-container-medium  uk-position-relative uk-background-primary uk-light uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-border-rounded uk-background-cover" style="background-image: url(https://placehold.co/1360x577);"  uk-height-viewport="offset-bottom: 11" >
+                                        <div class="uk-width-3-5@s">
+                                            <h3>Lorem, ipsum dolor.</h3>
+                                            <h2 class="uk-heading-small uk-margin-remove">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                            <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                            <div class="uk-height-small uk-hidden@s"></div>
+                                            <a href="#" class="uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-rounded uk-margin-top">See a demo</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen11"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share11"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen11" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-padding">
+                                    <div class="uk-container uk-container-medium  uk-position-relative uk-background-primary uk-light uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-border-rounded uk-background-cover" style="background-image: url(https://placehold.co/1360x577);"  uk-height-viewport="offset-bottom: 11" >
+                                        <div class="uk-width-3-5@s">
+                                            <h3>Lorem, ipsum dolor.</h3>
+                                            <h2 class="uk-heading-small uk-margin-remove">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                            <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                            <div class="uk-height-small uk-hidden@s"></div>
+                                            <a href="#" class="uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-rounded uk-margin-top">See a demo</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share11" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-03
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-03
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-padding">
+                                <div class="uk-container uk-container-medium  uk-position-relative uk-background-primary uk-light uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-border-rounded uk-background-cover" style="background-image: url(https://placehold.co/1360x577);"  uk-height-viewport="offset-bottom: 11" >
+                                    <div class="uk-width-3-5@s">
+                                        <h3>Lorem, ipsum dolor.</h3>
+                                        <h2 class="uk-heading-small uk-margin-remove">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                        <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                        <div class="uk-height-small uk-hidden@s"></div>
+                                        <a href="#" class="uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-rounded uk-margin-top">See a demo</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-padding&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-medium  uk-position-relative uk-background-primary uk-light uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-border-rounded uk-background-cover&#x22; style=&#x22;background-image: url(https://placehold.co/1360x577);&#x22;  uk-height-viewport=&#x22;offset-bottom: 11&#x22; &#x3E;
+            &#x3C;div class=&#x22;uk-width-3-5@s&#x22;&#x3E;
+                &#x3C;h3&#x3E;Lorem, ipsum dolor.&#x3C;/h3&#x3E;
+                &#x3C;h2 class=&#x22;uk-heading-small uk-margin-remove&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing&#x3C;/h2&#x3E;
+                &#x3C;p class=&#x22;uk-text-lead&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!&#x3C;/p&#x3E;
+                &#x3C;div class=&#x22;uk-height-small uk-hidden@s&#x22;&#x3E;&#x3C;/div&#x3E;
+                &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-rounded uk-margin-top&#x22;&#x3E;See a demo&#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-imagens-estilo-04">Estilo 04</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-padding">
+                                    <div class="uk-container uk-container-medium  uk-position-relative uk-background-primary uk-light uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-border-rounded uk-background-cover" style="background-image: url(https://placehold.co/1360x577);"  uk-height-viewport="offset-bottom: 11" >
+                                        <div class="uk-width-3-5@s">
+                                            <h2 class="uk-heading-medium uk-margin-remove">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                            <div class="uk-margin-top">
+                                                <a href="#" class="uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-pill uk-margin-top uk-margin-small-right">See a demo</a>
+                                                <a href="#" class="uk-button uk-button-default uk-button-large uk-width-auto@s uk-border-pill uk-margin-top">Stay in touch</a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-wrap uk-margin-top uk-width-1-1 uk-text-center uk-text-left@s">
+                                                <div class="uk-width-1-3@s uk-padding-small uk-margin-top">
+                                                    <div class="uk-card uk-padding-small uk-border-rounded">
+                                                        <h3 class="uk-heading-small">93%</h3>
+                                                        <p>
+                                                            Lorem, ipsum dolor.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-1-3@s uk-padding-small uk-margin-top">
+                                                    <div class="uk-card uk-padding-small uk-border-rounded">
+                                                        <h3 class="uk-heading-small">$4.7B</h3>
+                                                        <p>
+                                                            Lorem ipsum dolor sit.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-1-3@s uk-padding-small uk-margin-top">
+                                                    <div class="uk-card uk-padding-small uk-border-rounded">
+                                                        <h3 class="uk-heading-small">4.500</h3>
+                                                        <p>
+                                                            Lorem ipsum dolor sit.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen12"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share12"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen12" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-padding">
+                                    <div class="uk-container uk-container-medium  uk-position-relative uk-background-primary uk-light uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-border-rounded uk-background-cover" style="background-image: url(https://placehold.co/1360x577);"  uk-height-viewport="offset-bottom: 11" >
+                                        <div class="uk-width-3-5@s">
+                                            <h2 class="uk-heading-medium uk-margin-remove">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                            <div class="uk-margin-top">
+                                                <a href="#" class="uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-pill uk-margin-top uk-margin-small-right">See a demo</a>
+                                                <a href="#" class="uk-button uk-button-default uk-button-large uk-width-auto@s uk-border-pill uk-margin-top">Stay in touch</a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-wrap uk-margin-top uk-width-1-1 uk-text-center uk-text-left@s">
+                                                <div class="uk-width-1-3@s uk-padding-small uk-margin-top">
+                                                    <div class="uk-card uk-padding-small uk-border-rounded">
+                                                        <h3 class="uk-heading-small">93%</h3>
+                                                        <p>
+                                                            Lorem, ipsum dolor.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-1-3@s uk-padding-small uk-margin-top">
+                                                    <div class="uk-card uk-padding-small uk-border-rounded">
+                                                        <h3 class="uk-heading-small">$4.7B</h3>
+                                                        <p>
+                                                            Lorem ipsum dolor sit.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-1-3@s uk-padding-small uk-margin-top">
+                                                    <div class="uk-card uk-padding-small uk-border-rounded">
+                                                        <h3 class="uk-heading-small">4.500</h3>
+                                                        <p>
+                                                            Lorem ipsum dolor sit.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share12" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-04
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-04
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-padding">
+                                <div class="uk-container uk-container-medium  uk-position-relative uk-background-primary uk-light uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-border-rounded uk-background-cover" style="background-image: url(https://placehold.co/1360x577);"  uk-height-viewport="offset-bottom: 11" >
+                                    <div class="uk-width-3-5@s">
+                                        <h2 class="uk-heading-medium uk-margin-remove">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                        <div class="uk-margin-top">
+                                            <a href="#" class="uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-pill uk-margin-top uk-margin-small-right">See a demo</a>
+                                            <a href="#" class="uk-button uk-button-default uk-button-large uk-width-auto@s uk-border-pill uk-margin-top">Stay in touch</a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-wrap uk-margin-top uk-width-1-1 uk-text-center uk-text-left@s">
+                                            <div class="uk-width-1-3@s uk-padding-small uk-margin-top">
+                                                <div class="uk-card uk-padding-small uk-border-rounded">
+                                                    <h3 class="uk-heading-small">93%</h3>
+                                                    <p>
+                                                        Lorem, ipsum dolor.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-3@s uk-padding-small uk-margin-top">
+                                                <div class="uk-card uk-padding-small uk-border-rounded">
+                                                    <h3 class="uk-heading-small">$4.7B</h3>
+                                                    <p>
+                                                        Lorem ipsum dolor sit.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-1-3@s uk-padding-small uk-margin-top">
+                                                <div class="uk-card uk-padding-small uk-border-rounded">
+                                                    <h3 class="uk-heading-small">4.500</h3>
+                                                    <p>
+                                                        Lorem ipsum dolor sit.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-padding&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-medium  uk-position-relative uk-background-primary uk-light uk-padding uk-flex uk-flex-wrap uk-flex-middle uk-border-rounded uk-background-cover&#x22; style=&#x22;background-image: url(https://placehold.co/1360x577);&#x22;  uk-height-viewport=&#x22;offset-bottom: 11&#x22; &#x3E;
+            &#x3C;div class=&#x22;uk-width-3-5@s&#x22;&#x3E;
+                &#x3C;h2 class=&#x22;uk-heading-medium uk-margin-remove&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing&#x3C;/h2&#x3E;
+                &#x3C;div class=&#x22;uk-margin-top&#x22;&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-pill uk-margin-top uk-margin-small-right&#x22;&#x3E;See a demo&#x3C;/a&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-default uk-button-large uk-width-auto@s uk-border-pill uk-margin-top&#x22;&#x3E;Stay in touch&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-wrap uk-margin-top uk-width-1-1 uk-text-center uk-text-left@s&#x22;&#x3E;
+                    &#x3C;div class=&#x22;uk-width-1-3@s uk-padding-small uk-margin-top&#x22;&#x3E;
+                        &#x3C;div class=&#x22;uk-card uk-padding-small uk-border-rounded&#x22;&#x3E;
+                            &#x3C;h3 class=&#x22;uk-heading-small&#x22;&#x3E;93%&#x3C;/h3&#x3E;
+                            &#x3C;p&#x3E;
+                                Lorem, ipsum dolor.
+                            &#x3C;/p&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;uk-width-1-3@s uk-padding-small uk-margin-top&#x22;&#x3E;
+                        &#x3C;div class=&#x22;uk-card uk-padding-small uk-border-rounded&#x22;&#x3E;
+                            &#x3C;h3 class=&#x22;uk-heading-small&#x22;&#x3E;$4.7B&#x3C;/h3&#x3E;
+                            &#x3C;p&#x3E;
+                                Lorem ipsum dolor sit.
+                            &#x3C;/p&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;uk-width-1-3@s uk-padding-small uk-margin-top&#x22;&#x3E;
+                        &#x3C;div class=&#x22;uk-card uk-padding-small uk-border-rounded&#x22;&#x3E;
+                            &#x3C;h3 class=&#x22;uk-heading-small&#x22;&#x3E;4.500&#x3C;/h3&#x3E;
+                            &#x3C;p&#x3E;
+                                Lorem ipsum dolor sit.
+                            &#x3C;/p&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-imagens-estilo-05">Estilo 05</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-background-cover" style="background-image: url(https://placehold.co/1520x442);">
+                                    <div class="uk-container uk-container-large uk-position-relative uk-flex uk-flex-wrap uk-flex-middle">
+                                        <div class="uk-tile uk-tile-default uk-width-2xlarge@m uk-padding uk-border-rounded">
+                                            <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                            <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                            <a href="#" class="uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-rounded uk-margin-large-top">See a demo</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen13"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share13"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen13" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-background-cover" style="background-image: url(https://placehold.co/1520x442);">
+                                    <div class="uk-container uk-container-large uk-position-relative uk-flex uk-flex-wrap uk-flex-middle">
+                                        <div class="uk-tile uk-tile-default uk-width-2xlarge@m uk-padding uk-border-rounded">
+                                            <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                            <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                            <a href="#" class="uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-rounded uk-margin-large-top">See a demo</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share13" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-05
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-05
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-background-cover" style="background-image: url(https://placehold.co/1520x442);">
+                                <div class="uk-container uk-container-large uk-position-relative uk-flex uk-flex-wrap uk-flex-middle">
+                                    <div class="uk-tile uk-tile-default uk-width-2xlarge@m uk-padding uk-border-rounded">
+                                        <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur adipisicing</h2>
+                                        <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                        <a href="#" class="uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-rounded uk-margin-large-top">See a demo</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-background-cover&#x22; style=&#x22;background-image: url(https://placehold.co/1520x442);&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large uk-position-relative uk-flex uk-flex-wrap uk-flex-middle&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-tile uk-tile-default uk-width-2xlarge@m uk-padding uk-border-rounded&#x22;&#x3E;
+                &#x3C;h2 class=&#x22;uk-heading-small&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing&#x3C;/h2&#x3E;
+                &#x3C;p class=&#x22;uk-text-lead&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!&#x3C;/p&#x3E;
+                &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-primary uk-button-large uk-width-auto@s uk-border-rounded uk-margin-large-top&#x22;&#x3E;See a demo&#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-imagens-estilo-06">Estilo 06</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-padding-small">
+                                    <div class="uk-container uk-section-muted uk-padding-small uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-2@m">
+                                        <div class="uk-padding-small">
+                                            <div class="uk-background-cover uk-position-relative uk-light" style="background-image: url('https://placehold.co/570x400');">
+                                                <img class="uk-invisible" src="https://placehold.co/570x400" width="570" height="400" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <h3>Lorem, ipsum dolor</h3>
+                                            <h2 class="uk-heading-small uk-margin-remove-top">Lorem ipsum dolor sit amet adipisicing</h2>
+                                            <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam!</p>
+                                            <a href="#" class="uk-button uk-button-text uk-margin-top">See a demo <span uk-icon="arrow-right"></span></a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen14"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share14"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen14" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-padding-small">
+                                    <div class="uk-container uk-section-muted uk-padding-small uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-2@m">
+                                        <div class="uk-padding-small">
+                                            <div class="uk-background-cover uk-position-relative uk-light" style="background-image: url('https://placehold.co/570x400');">
+                                                <img class="uk-invisible" src="https://placehold.co/570x400" width="570" height="400" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <h3>Lorem, ipsum dolor</h3>
+                                            <h2 class="uk-heading-small uk-margin-remove-top">Lorem ipsum dolor sit amet adipisicing</h2>
+                                            <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam!</p>
+                                            <a href="#" class="uk-button uk-button-text uk-margin-top">See a demo <span uk-icon="arrow-right"></span></a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share14" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-06
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-06
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-padding-small">
+                                <div class="uk-container uk-section-muted uk-padding-small uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-2@m">
+                                    <div class="uk-padding-small">
+                                        <div class="uk-background-cover uk-position-relative uk-light" style="background-image: url('https://placehold.co/570x400');">
+                                            <img class="uk-invisible" src="https://placehold.co/570x400" width="570" height="400" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="uk-padding-small">
+                                        <h3>Lorem, ipsum dolor</h3>
+                                        <h2 class="uk-heading-small uk-margin-remove-top">Lorem ipsum dolor sit amet adipisicing</h2>
+                                        <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam!</p>
+                                        <a href="#" class="uk-button uk-button-text uk-margin-top">See a demo <span uk-icon="arrow-right"></span></a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-padding-small&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-section-muted uk-padding-small uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-2@m&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-background-cover uk-position-relative uk-light&#x22; style=&#x22;background-image: url(&#x27;https://placehold.co/570x400&#x27;);&#x22;&#x3E;
+                    &#x3C;img class=&#x22;uk-invisible&#x22; src=&#x22;https://placehold.co/570x400&#x22; width=&#x22;570&#x22; height=&#x22;400&#x22; alt=&#x22;&#x22;&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;h3&#x3E;Lorem, ipsum dolor&#x3C;/h3&#x3E;
+                &#x3C;h2 class=&#x22;uk-heading-small uk-margin-remove-top&#x22;&#x3E;Lorem ipsum dolor sit amet adipisicing&#x3C;/h2&#x3E;
+                &#x3C;p class=&#x22;uk-text-lead&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam!&#x3C;/p&#x3E;
+                &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-text uk-margin-top&#x22;&#x3E;See a demo &#x3C;span uk-icon=&#x22;arrow-right&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-imagens-estilo-07">Estilo 07</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-section-medium uk-background-cover" style="background-image: url(https://placehold.co/1536x747);">
+                                    <div class="uk-container uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                        <div class="uk-width-5-5@m uk-section-muted uk-padding">
+                                            <div class="uk-width-2-3@m uk-margin-auto">
+                                                <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, distinctio.</h2>
+                                                <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                                <form action="script.php" method="post">
+                                                    <div class="uk-margin">
+                                                        <input class="uk-input uk-form-large uk-width-2-3@s uk-border-rounded" name="email-field" type="text" placeholder="Email Address" aria-label="Email Address">
+                                                        <div class="uk-margin-small-top uk-hidden@s"></div>
+                                                        <button type="submit" class="uk-button uk-button-large uk-width-auto@s uk-button-primary uk-border-rounded">Send</button>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                                                        </p>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen15"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share15"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen15" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-section-medium uk-background-cover" style="background-image: url(https://placehold.co/1536x747);">
+                                    <div class="uk-container uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                        <div class="uk-width-5-5@m uk-section-muted uk-padding">
+                                            <div class="uk-width-2-3@m uk-margin-auto">
+                                                <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, distinctio.</h2>
+                                                <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                                <form action="script.php" method="post">
+                                                    <div class="uk-margin">
+                                                        <input class="uk-input uk-form-large uk-width-2-3@s uk-border-rounded" name="email-field" type="text" placeholder="Email Address" aria-label="Email Address">
+                                                        <div class="uk-margin-small-top uk-hidden@s"></div>
+                                                        <button type="submit" class="uk-button uk-button-large uk-width-auto@s uk-button-primary uk-border-rounded">Send</button>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing.
+                                                        </p>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share15" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-07
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-07
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-section-medium uk-background-cover" style="background-image: url(https://placehold.co/1536x747);">
+                                <div class="uk-container uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                    <div class="uk-width-5-5@m uk-section-muted uk-padding">
+                                        <div class="uk-width-2-3@m uk-margin-auto">
+                                            <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, distinctio.</h2>
+                                            <p class="uk-text-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!</p>
+                                            <form action="script.php" method="post">
+                                                <div class="uk-margin">
+                                                    <input class="uk-input uk-form-large uk-width-2-3@s uk-border-rounded" name="email-field" type="text" placeholder="Email Address" aria-label="Email Address">
+                                                    <div class="uk-margin-small-top uk-hidden@s"></div>
+                                                    <button type="submit" class="uk-button uk-button-large uk-width-auto@s uk-button-primary uk-border-rounded">Send</button>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                                                    </p>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-section-medium uk-background-cover&#x22; style=&#x22;background-image: url(https://placehold.co/1536x747);&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-width-5-5@m uk-section-muted uk-padding&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-width-2-3@m uk-margin-auto&#x22;&#x3E;
+                    &#x3C;h2 class=&#x22;uk-heading-small&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, distinctio.&#x3C;/h2&#x3E;
+                    &#x3C;p class=&#x22;uk-text-lead&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ipsam excepturi nisi, sed atque!&#x3C;/p&#x3E;
+                    &#x3C;form action=&#x22;script.php&#x22; method=&#x22;post&#x22;&#x3E;
+                        &#x3C;div class=&#x22;uk-margin&#x22;&#x3E;
+                            &#x3C;input class=&#x22;uk-input uk-form-large uk-width-2-3@s uk-border-rounded&#x22; name=&#x22;email-field&#x22; type=&#x22;text&#x22; placeholder=&#x22;Email Address&#x22; aria-label=&#x22;Email Address&#x22;&#x3E;
+                            &#x3C;div class=&#x22;uk-margin-small-top uk-hidden@s&#x22;&#x3E;&#x3C;/div&#x3E;
+                            &#x3C;button type=&#x22;submit&#x22; class=&#x22;uk-button uk-button-large uk-width-auto@s uk-button-primary uk-border-rounded&#x22;&#x3E;Send&#x3C;/button&#x3E;
+                            &#x3C;p&#x3E;
+                                Lorem ipsum dolor sit amet consectetur adipisicing.
+                            &#x3C;/p&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/form&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-imagens-estilo-08">Estilo 08</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-section-muted">
+                                    <div class="uk-container uk-container-large">
+                                        <div class="uk-flex uk-flex-wrap uk-child-width-1-2@m">
+                                            <div class="uk-padding-small">
+                                                <div class="uk-tile uk-tile-primary uk-padding-large uk-border-rounded">
+                                                    <h3>Lorem ipsum dolor sit</h3>
+                                                    <h2 class="uk-margin-top">Get to know our applications up close</h2>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste doloremque quidem consequuntur perspiciatis praesentium
+                                                        illum minima nihil fuga, numquam laboriosam nam.
+                                                    </p>
+                                                    <a href="#" class="uk-button uk-button-text uk-margin-top">See a demo <span uk-icon="arrow-right" class="uk-icon"></span></a>
+                                                    <div class="uk-margin-medium-top">
+                                                        <div class="uk-background-cover uk-position-relative uk-light" style="background-image: url('https://placehold.co/550x400');">
+                                                            <img class="uk-invisible" src="https://placehold.co/550x400" width="550" height="400" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <div class="uk-tile uk-tile-secondary uk-padding-large uk-border-rounded">
+                                                    <h3>Lorem ipsum dolor sit</h3>
+                                                    <h2 class="uk-margin-top">Clear all doubts about what is best for your business</h2>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste doloremque quidem consequuntur perspiciatis praesentium
+                                                        illum minima nihil fuga, numquam laboriosam nam.
+                                                    </p>
+                                                    <a href="#" class="uk-button uk-button-text uk-margin-top">Stay in touch <span uk-icon="arrow-right" class="uk-icon"></span></a>
+                                                    <div class="uk-margin-medium-top">
+                                                        <div class="uk-background-cover uk-position-relative uk-light" style="background-image: url('https://placehold.co/550x400');">
+                                                            <img class="uk-invisible" src="https://placehold.co/550x400" width="550" height="400" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen16"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share16"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen16" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-section-muted">
+                                    <div class="uk-container uk-container-large">
+                                        <div class="uk-flex uk-flex-wrap uk-child-width-1-2@m">
+                                            <div class="uk-padding-small">
+                                                <div class="uk-tile uk-tile-primary uk-padding-large uk-border-rounded">
+                                                    <h3>Lorem ipsum dolor sit</h3>
+                                                    <h2 class="uk-margin-top">Get to know our applications up close</h2>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste doloremque quidem consequuntur perspiciatis praesentium
+                                                        illum minima nihil fuga, numquam laboriosam nam.
+                                                    </p>
+                                                    <a href="#" class="uk-button uk-button-text uk-margin-top">See a demo <span uk-icon="arrow-right" class="uk-icon"></span></a>
+                                                    <div class="uk-margin-medium-top">
+                                                        <div class="uk-background-cover uk-position-relative uk-light" style="background-image: url('https://placehold.co/550x400');">
+                                                            <img class="uk-invisible" src="https://placehold.co/550x400" width="550" height="400" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <div class="uk-tile uk-tile-secondary uk-padding-large uk-border-rounded">
+                                                    <h3>Lorem ipsum dolor sit</h3>
+                                                    <h2 class="uk-margin-top">Clear all doubts about what is best for your business</h2>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste doloremque quidem consequuntur perspiciatis praesentium
+                                                        illum minima nihil fuga, numquam laboriosam nam.
+                                                    </p>
+                                                    <a href="#" class="uk-button uk-button-text uk-margin-top">Stay in touch <span uk-icon="arrow-right" class="uk-icon"></span></a>
+                                                    <div class="uk-margin-medium-top">
+                                                        <div class="uk-background-cover uk-position-relative uk-light" style="background-image: url('https://placehold.co/550x400');">
+                                                            <img class="uk-invisible" src="https://placehold.co/550x400" width="550" height="400" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share16" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-08
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-08
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-section-muted">
+                                <div class="uk-container uk-container-large">
+                                    <div class="uk-flex uk-flex-wrap uk-child-width-1-2@m">
+                                        <div class="uk-padding-small">
+                                            <div class="uk-tile uk-tile-primary uk-padding-large uk-border-rounded">
+                                                <h3>Lorem ipsum dolor sit</h3>
+                                                <h2 class="uk-margin-top">Get to know our applications up close</h2>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste doloremque quidem consequuntur perspiciatis praesentium
+                                                    illum minima nihil fuga, numquam laboriosam nam.
+                                                </p>
+                                                <a href="#" class="uk-button uk-button-text uk-margin-top">See a demo <span uk-icon="arrow-right" class="uk-icon"></span></a>
+                                                <div class="uk-margin-medium-top">
+                                                    <div class="uk-background-cover uk-position-relative uk-light" style="background-image: url('https://placehold.co/550x400');">
+                                                        <img class="uk-invisible" src="https://placehold.co/550x400" width="550" height="400" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-tile uk-tile-secondary uk-padding-large uk-border-rounded">
+                                                <h3>Lorem ipsum dolor sit</h3>
+                                                <h2 class="uk-margin-top">Clear all doubts about what is best for your business</h2>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste doloremque quidem consequuntur perspiciatis praesentium
+                                                    illum minima nihil fuga, numquam laboriosam nam.
+                                                </p>
+                                                <a href="#" class="uk-button uk-button-text uk-margin-top">Stay in touch <span uk-icon="arrow-right" class="uk-icon"></span></a>
+                                                <div class="uk-margin-medium-top">
+                                                    <div class="uk-background-cover uk-position-relative uk-light" style="background-image: url('https://placehold.co/550x400');">
+                                                        <img class="uk-invisible" src="https://placehold.co/550x400" width="550" height="400" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-section-muted&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-flex uk-flex-wrap uk-child-width-1-2@m&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                    &#x3C;div class=&#x22;uk-tile uk-tile-primary uk-padding-large uk-border-rounded&#x22;&#x3E;
+                        &#x3C;h3&#x3E;Lorem ipsum dolor sit&#x3C;/h3&#x3E;
+                        &#x3C;h2 class=&#x22;uk-margin-top&#x22;&#x3E;Get to know our applications up close&#x3C;/h2&#x3E;
+                        &#x3C;p&#x3E;
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste doloremque quidem consequuntur perspiciatis praesentium
+                            illum minima nihil fuga, numquam laboriosam nam.
+                        &#x3C;/p&#x3E;
+                        &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-text uk-margin-top&#x22;&#x3E;See a demo &#x3C;span uk-icon=&#x22;arrow-right&#x22; class=&#x22;uk-icon&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;div class=&#x22;uk-margin-medium-top&#x22;&#x3E;
+                            &#x3C;div class=&#x22;uk-background-cover uk-position-relative uk-light&#x22; style=&#x22;background-image: url(&#x27;https://placehold.co/550x400&#x27;);&#x22;&#x3E;
+                                &#x3C;img class=&#x22;uk-invisible&#x22; src=&#x22;https://placehold.co/550x400&#x22; width=&#x22;550&#x22; height=&#x22;400&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                    &#x3C;div class=&#x22;uk-tile uk-tile-secondary uk-padding-large uk-border-rounded&#x22;&#x3E;
+                        &#x3C;h3&#x3E;Lorem ipsum dolor sit&#x3C;/h3&#x3E;
+                        &#x3C;h2 class=&#x22;uk-margin-top&#x22;&#x3E;Clear all doubts about what is best for your business&#x3C;/h2&#x3E;
+                        &#x3C;p&#x3E;
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste doloremque quidem consequuntur perspiciatis praesentium
+                            illum minima nihil fuga, numquam laboriosam nam.
+                        &#x3C;/p&#x3E;
+                        &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-text uk-margin-top&#x22;&#x3E;Stay in touch &#x3C;span uk-icon=&#x22;arrow-right&#x22; class=&#x22;uk-icon&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                        &#x3C;div class=&#x22;uk-margin-medium-top&#x22;&#x3E;
+                            &#x3C;div class=&#x22;uk-background-cover uk-position-relative uk-light&#x22; style=&#x22;background-image: url(&#x27;https://placehold.co/550x400&#x27;);&#x22;&#x3E;
+                                &#x3C;img class=&#x22;uk-invisible&#x22; src=&#x22;https://placehold.co/550x400&#x22; width=&#x22;550&#x22; height=&#x22;400&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="cta-com-imagens-estilo-09">Estilo 09</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section uk-section-medium uk-section-muted uk-light">
+                                    <div class="uk-container uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                        <div class="uk-padding-large uk-padding-remove-left uk-padding-remove-right uk-background-cover" style="background-image: url(https://placehold.co/1200x466);">
+                                            <div class="uk-width-5-5@m uk-padding">
+                                                <div class="uk-width-2-3@m uk-margin-auto">
+                                                    <span uk-icon="icon: bolt; ratio: 3"></span>
+                                                    <h2 class="uk-heading-small uk-margin-small-top">Lorem ipsum dolor sit amet consectetur, distinctio.</h2>
+                                                    <p class="uk-text-lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem perspiciatis deserunt laboriosam fugiat culpa maiores aut aliquid fugit quaerat soluta.</p>
+                                                    <a href="#" class="uk-button uk-button-text uk-margin-top">See a demo <span uk-icon="arrow-right" class="uk-icon"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen17"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share17"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen17" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section uk-section-medium uk-section-muted uk-light">
+                                    <div class="uk-container uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                        <div class="uk-padding-large uk-padding-remove-left uk-padding-remove-right uk-background-cover" style="background-image: url(https://placehold.co/1200x466);">
+                                            <div class="uk-width-5-5@m uk-padding">
+                                                <div class="uk-width-2-3@m uk-margin-auto">
+                                                    <span uk-icon="icon: bolt; ratio: 3"></span>
+                                                    <h2 class="uk-heading-small uk-margin-small-top">Lorem ipsum dolor sit amet consectetur, distinctio.</h2>
+                                                    <p class="uk-text-lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem perspiciatis deserunt laboriosam fugiat culpa maiores aut aliquid fugit quaerat soluta.</p>
+                                                    <a href="#" class="uk-button uk-button-text uk-margin-top">See a demo <span uk-icon="arrow-right" class="uk-icon"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share17" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-09
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/cta.html#cta-com-imagens-estilo-09
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section uk-section-medium uk-section-muted uk-light">
+                                <div class="uk-container uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center">
+                                    <div class="uk-padding-large uk-padding-remove-left uk-padding-remove-right uk-background-cover" style="background-image: url(https://placehold.co/1200x466);">
+                                        <div class="uk-width-5-5@m uk-padding">
+                                            <div class="uk-width-2-3@m uk-margin-auto">
+                                                <span uk-icon="icon: bolt; ratio: 3"></span>
+                                                <h2 class="uk-heading-small uk-margin-small-top">Lorem ipsum dolor sit amet consectetur, distinctio.</h2>
+                                                <p class="uk-text-lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem perspiciatis deserunt laboriosam fugiat culpa maiores aut aliquid fugit quaerat soluta.</p>
+                                                <a href="#" class="uk-button uk-button-text uk-margin-top">See a demo <span uk-icon="arrow-right" class="uk-icon"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section uk-section-medium uk-section-muted uk-light&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-child-width-1-1@s uk-text-center&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-padding-large uk-padding-remove-left uk-padding-remove-right uk-background-cover&#x22; style=&#x22;background-image: url(https://placehold.co/1200x466);&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-width-5-5@m uk-padding&#x22;&#x3E;
+                    &#x3C;div class=&#x22;uk-width-2-3@m uk-margin-auto&#x22;&#x3E;
+                        &#x3C;span uk-icon=&#x22;icon: bolt; ratio: 3&#x22;&#x3E;&#x3C;/span&#x3E;
+                        &#x3C;h2 class=&#x22;uk-heading-small uk-margin-small-top&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur, distinctio.&#x3C;/h2&#x3E;
+                        &#x3C;p class=&#x22;uk-text-lead&#x22;&#x3E;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem perspiciatis deserunt laboriosam fugiat culpa maiores aut aliquid fugit quaerat soluta.&#x3C;/p&#x3E;
+                        &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-text uk-margin-top&#x22;&#x3E;See a demo &#x3C;span uk-icon=&#x22;arrow-right&#x22; class=&#x22;uk-icon&#x22;&#x3E;&#x3C;/span&#x3E;&#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="uk-padding-small uk-section-primary uk-text-center">
+        <footer>
+            <p class="uk-margin-remove uk-text-italic">
+                Feito com ❤️ por: <a href="https://github.com/leensc" target="_blank" rel="noopener"><span>Leandro do Nascimento</span></a>
+            </p>
+        </footer>
+    </section>
+</body>
+</html>
