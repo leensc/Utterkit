@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Gallery (ou Galeria em português) é uma parte designada para exibir imagens, fotos ou até mesmo vídeos de maneira organizada e visualmente atraente. Geralmente, uma galeria é utilizada para mostrar portfólios, produtos, eventos passados, capturas de tela de aplicativos, entre outros conteúdos visuais relevantes para o site. Ela pode ser simples, com miniaturas que ampliam ao serem clicadas, ou mais sofisticada, com efeitos de transição, carrosséis ou lightboxes para melhor visualização das imagens.">
+    <meta name="author" content="Leandro do Nascimento">
+    <link rel="shortcut icon" href="../img/logo-primary.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <!-- UIkit -->
+    <link rel="stylesheet" href="../css/uikit.min.css">
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Utterkit -->
+    <link rel="stylesheet" href="../css/utterkit.css">
+
+    <!-- JQuery -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <title>Gallery | Utterkit</title>
+</head>
+<body>
+    <section class="uk-section-primary uk-section-primary">
+        <div id="offcanvas-push" uk-offcanvas="mode: push">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center uk-background-primary">
+                <button class="uk-offcanvas-close uk-close-large" type="button" uk-close uk-toggle="cls: uk-close-large; mode: media; media: @s"></button>
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" uk-nav>
+                    <li><a href="../index.html">Home</a></li>
+                    <hr>
+                    <li><a href="../instalacao.html">Instalação</a></li>
+                    <hr>
+                    <li class="uk-active"><a href="../recursos.html">Recursos</a></li>
+                    <hr>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <hr>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <hr>
+                    <li><a href="../termos-e-uso.html">Termos e Uso</a></li>
+                    <hr>
+                    <li><a href="../licenca.html">Licença</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="uk-navbar-container uk-navbar-transparent">
+            <div class="uk-container uk-container-large">
+                <div class="uk-margin-left uk-margin-right">
+                    <div uk-navbar="mode: click" class="uk-navbar uk-flex uk-flex-middle uk-flex-between">
+                        <div>
+                            <a href="../index.html" class="uk-navbar-item uk-logo">
+                                <img src="../img/logo-secondary.svg" width="30" height="30" alt="Logo Utterkit">
+                                <span class="uk-margin-small-left">Utterkit</span>
+                            </a>
+                        </div>
+                        <a href="#offcanvas-push" uk-toggle>
+                            <span uk-icon="icon: menu; ratio: 2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="uk-section uk-section-medium">
+        <div class="uk-container uk-container-medium">
+            <nav aria-label="Breadcrumb">
+                <ul class="uk-breadcrumb">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../recursos.html">Recursos</a></li>
+                    <li><span aria-current="page">Gallery</span></li>
+                </ul>
+            </nav>
+            <h1 class="uk-heading-large">Gallery</h1>
+            <h2>Integre uma galeria de imagens ao site</h2>
+            <p>
+                A <b>Gallery</b> (ou <em>Galeria</em> em português) é uma parte designada para exibir imagens, fotos ou até mesmo vídeos de maneira organizada e
+                visualmente atraente. Geralmente, uma galeria é utilizada para mostrar portfólios, produtos, eventos passados, capturas de tela de aplicativos,
+                entre outros conteúdos visuais relevantes para o site. Ela pode ser simples, com miniaturas que ampliam ao serem clicadas, ou mais sofisticada,
+                com efeitos de transição, carrosséis ou lightboxes para melhor visualização das imagens.
+            </p>
+            <hr class="uk-margin-medium-top">
+            <div>
+                <h2 uk-sticky="end: true; overflow-flip: false; offset: -1" class="uk-margin-small-bottom utk-owner-blurred-effect-owner">Gallery estático</h2>
+                <div class="uk-padding-small utk-owner-box-style">
+                    <h3 id="gallery-estatico-estilo-01">Estilo 01</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section">
+                                    <div class="uk-container">
+                                        <div id="js-lightbox-animation" class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid" uk-grid="" uk-lightbox="" animation="slide">
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen1"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share1"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen1" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section">
+                                    <div class="uk-container">
+                                        <div id="js-lightbox-animation" class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid" uk-grid="" uk-lightbox="" animation="slide">
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share1" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/gallery.html#gallery-estatico-estilo-01
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/gallery.html#gallery-estatico-estilo-01
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section">
+                                <div class="uk-container">
+                                    <div id="js-lightbox-animation" class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid" uk-grid="" uk-lightbox="" animation="slide">
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container&#x22;&#x3E;
+            &#x3C;div id=&#x22;js-lightbox-animation&#x22; class=&#x22;uk-child-width-1-2@s uk-child-width-1-3@m uk-grid&#x22; uk-grid=&#x22;&#x22; uk-lightbox=&#x22;&#x22; animation=&#x22;slide&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="gallery-estatico-estilo-02">Estilo 02</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section">
+                                    <div class="uk-container">
+                                        <div id="js-lightbox-animation" class="uk-flex uk-flex-wrap uk-flex-center uk-flex-middle" uk-lightbox="" animation="slide">
+                                            <div class="uk-flex uk-flex-center uk-flex-column uk-flex-row@s">
+                                                <div style="border: 5px solid transparent;">
+                                                    <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1514x994" caption="1514x994" data-alt="The value for the image alt attribute" role="button">
+                                                        <figure>
+                                                            <img src="https://placehold.co/757x497" width="757" height="497" alt="">
+                                                            <!-- <figcaption class="uk-margin-small-top">1514x994</figcaption> -->
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div style="border: 5px solid transparent;" class="uk-flex uk-flex-center">
+                                                    <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/748x994" caption="748x994" data-alt="The value for the image alt attribute" role="button">
+                                                        <figure>
+                                                            <img src="https://placehold.co/374x497" width="374" height="497" alt="">
+                                                            <!-- <figcaption class="uk-margin-small-top">748x994</figcaption> -->
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="uk-flex uk-flex-column uk-flex-row@s">
+                                                <div style="border: 5px solid transparent;">
+                                                    <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/748x488" caption="748x488" data-alt="The value for the image alt attribute" role="button">
+                                                        <figure>
+                                                            <img src="https://placehold.co/374x244" width="374" height="244" alt="">
+                                                            <!-- <figcaption class="uk-margin-small-top">748x488</figcaption> -->
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div style="border: 5px solid transparent;">
+                                                    <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/748x488" caption="748x488" data-alt="The value for the image alt attribute" role="button">
+                                                        <figure>
+                                                            <img src="https://placehold.co/374x244" width="374" height="244" alt="">
+                                                            <!-- <figcaption class="uk-margin-small-top">748x488</figcaption> -->
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div style="border: 5px solid transparent;">
+                                                    <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/748x488" caption="748x488" data-alt="The value for the image alt attribute" role="button">
+                                                        <figure>
+                                                            <img src="https://placehold.co/374x244" width="374" height="244" alt="">
+                                                            <!-- <figcaption class="uk-margin-small-top">748x488</figcaption> -->
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen2"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share2"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen2" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section">
+                                    <div class="uk-container">
+                                        <div id="js-lightbox-animation" class="uk-flex uk-flex-wrap uk-flex-center uk-flex-middle" uk-lightbox="" animation="slide">
+                                            <div class="uk-flex uk-flex-center uk-flex-column uk-flex-row@s">
+                                                <div style="border: 5px solid transparent;">
+                                                    <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1514x994" caption="1514x994" data-alt="The value for the image alt attribute" role="button">
+                                                        <figure>
+                                                            <img src="https://placehold.co/757x497" width="757" height="497" alt="">
+                                                            <!-- <figcaption class="uk-margin-small-top">1514x994</figcaption> -->
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div style="border: 5px solid transparent;" class="uk-flex uk-flex-center">
+                                                    <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/748x994" caption="748x994" data-alt="The value for the image alt attribute" role="button">
+                                                        <figure>
+                                                            <img src="https://placehold.co/374x497" width="374" height="497" alt="">
+                                                            <!-- <figcaption class="uk-margin-small-top">748x994</figcaption> -->
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="uk-flex uk-flex-column uk-flex-row@s">
+                                                <div style="border: 5px solid transparent;">
+                                                    <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/748x488" caption="748x488" data-alt="The value for the image alt attribute" role="button">
+                                                        <figure>
+                                                            <img src="https://placehold.co/374x244" width="374" height="244" alt="">
+                                                            <!-- <figcaption class="uk-margin-small-top">748x488</figcaption> -->
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div style="border: 5px solid transparent;">
+                                                    <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/748x488" caption="748x488" data-alt="The value for the image alt attribute" role="button">
+                                                        <figure>
+                                                            <img src="https://placehold.co/374x244" width="374" height="244" alt="">
+                                                            <!-- <figcaption class="uk-margin-small-top">748x488</figcaption> -->
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                                <div style="border: 5px solid transparent;">
+                                                    <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/748x488" caption="748x488" data-alt="The value for the image alt attribute" role="button">
+                                                        <figure>
+                                                            <img src="https://placehold.co/374x244" width="374" height="244" alt="">
+                                                            <!-- <figcaption class="uk-margin-small-top">748x488</figcaption> -->
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share2" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/gallery.html#gallery-estatico-estilo-02
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/gallery.html#gallery-estatico-estilo-02
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section">
+                                <div class="uk-container">
+                                    <div id="js-lightbox-animation" class="uk-flex uk-flex-wrap uk-flex-center uk-flex-middle" uk-lightbox="" animation="slide">
+                                        <div class="uk-flex uk-flex-center uk-flex-column uk-flex-row@s">
+                                            <div style="border: 5px solid transparent;">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1514x994" caption="1514x994" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/757x497" width="757" height="497" alt="">
+                                                        <!-- <figcaption class="uk-margin-small-top">1514x994</figcaption> -->
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div style="border: 5px solid transparent;" class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/748x994" caption="748x994" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/374x497" width="374" height="497" alt="">
+                                                        <!-- <figcaption class="uk-margin-small-top">748x994</figcaption> -->
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-flex uk-flex-column uk-flex-row@s">
+                                            <div style="border: 5px solid transparent;">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/748x488" caption="748x488" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/374x244" width="374" height="244" alt="">
+                                                        <!-- <figcaption class="uk-margin-small-top">748x488</figcaption> -->
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div style="border: 5px solid transparent;">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/748x488" caption="748x488" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/374x244" width="374" height="244" alt="">
+                                                        <!-- <figcaption class="uk-margin-small-top">748x488</figcaption> -->
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div style="border: 5px solid transparent;">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/748x488" caption="748x488" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/374x244" width="374" height="244" alt="">
+                                                        <!-- <figcaption class="uk-margin-small-top">748x488</figcaption> -->
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container&#x22;&#x3E;
+            &#x3C;div id=&#x22;js-lightbox-animation&#x22; class=&#x22;uk-flex uk-flex-wrap uk-flex-center uk-flex-middle&#x22; uk-lightbox=&#x22;&#x22; animation=&#x22;slide&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center uk-flex-column uk-flex-row@s&#x22;&#x3E;
+                    &#x3C;div style=&#x22;border: 5px solid transparent;&#x22;&#x3E;
+                        &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1514x994&#x22; caption=&#x22;1514x994&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                            &#x3C;figure&#x3E;
+                                &#x3C;img src=&#x22;https://placehold.co/757x497&#x22; width=&#x22;757&#x22; height=&#x22;497&#x22; alt=&#x22;&#x22;&#x3E;
+                                &#x3C;!-- &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1514x994&#x3C;/figcaption&#x3E; --&#x3E;
+                            &#x3C;/figure&#x3E;
+                        &#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div style=&#x22;border: 5px solid transparent;&#x22; class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                        &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/748x994&#x22; caption=&#x22;748x994&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                            &#x3C;figure&#x3E;
+                                &#x3C;img src=&#x22;https://placehold.co/374x497&#x22; width=&#x22;374&#x22; height=&#x22;497&#x22; alt=&#x22;&#x22;&#x3E;
+                                &#x3C;!-- &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;748x994&#x3C;/figcaption&#x3E; --&#x3E;
+                            &#x3C;/figure&#x3E;
+                        &#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-column uk-flex-row@s&#x22;&#x3E;
+                    &#x3C;div style=&#x22;border: 5px solid transparent;&#x22;&#x3E;
+                        &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/748x488&#x22; caption=&#x22;748x488&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                            &#x3C;figure&#x3E;
+                                &#x3C;img src=&#x22;https://placehold.co/374x244&#x22; width=&#x22;374&#x22; height=&#x22;244&#x22; alt=&#x22;&#x22;&#x3E;
+                                &#x3C;!-- &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;748x488&#x3C;/figcaption&#x3E; --&#x3E;
+                            &#x3C;/figure&#x3E;
+                        &#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div style=&#x22;border: 5px solid transparent;&#x22;&#x3E;
+                        &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/748x488&#x22; caption=&#x22;748x488&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                            &#x3C;figure&#x3E;
+                                &#x3C;img src=&#x22;https://placehold.co/374x244&#x22; width=&#x22;374&#x22; height=&#x22;244&#x22; alt=&#x22;&#x22;&#x3E;
+                                &#x3C;!-- &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;748x488&#x3C;/figcaption&#x3E; --&#x3E;
+                            &#x3C;/figure&#x3E;
+                        &#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div style=&#x22;border: 5px solid transparent;&#x22;&#x3E;
+                        &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/748x488&#x22; caption=&#x22;748x488&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                            &#x3C;figure&#x3E;
+                                &#x3C;img src=&#x22;https://placehold.co/374x244&#x22; width=&#x22;374&#x22; height=&#x22;244&#x22; alt=&#x22;&#x22;&#x3E;
+                                &#x3C;!-- &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;748x488&#x3C;/figcaption&#x3E; --&#x3E;
+                            &#x3C;/figure&#x3E;
+                        &#x3C;/a&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-margin-medium-top">
+                <h2 uk-sticky="end: true; overflow-flip: false; offset: -1" class="uk-margin-small-bottom utk-owner-blurred-effect-owner">Gallery com Parallax</h2>
+                <div class="uk-padding-small utk-owner-box-style">
+                    <h3 id="gallery-com-parallax-estilo-01">Estilo 01</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section">
+                                    <div class="uk-container">
+                                        <div id="js-lightbox-animation" class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l js-grid-masonry" uk-grid="parallax: 150" masonry="pack" uk-lightbox="" animation="slide">
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen3"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share3"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen3" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section">
+                                    <div class="uk-container">
+                                        <div id="js-lightbox-animation" class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l js-grid-masonry" uk-grid="parallax: 150" masonry="pack" uk-lightbox="" animation="slide">
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                            <div class="uk-flex uk-flex-center">
+                                                <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                    <figure>
+                                                        <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                        <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share3" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/gallery.html#gallery-com-parallax-estilo-01
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/gallery.html#gallery-com-parallax-estilo-01
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section">
+                                <div class="uk-container">
+                                    <div id="js-lightbox-animation" class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l js-grid-masonry" uk-grid="parallax: 150" masonry="pack" uk-lightbox="" animation="slide">
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="uk-flex uk-flex-center">
+                                            <a class="uk-inline uk-panel uk-link-muted uk-text-center" href="https://placehold.co/1800x1200" caption="1800x1200" data-alt="The value for the image alt attribute" role="button">
+                                                <figure>
+                                                    <img src="https://placehold.co/400x267" width="400" height="267" alt="">
+                                                    <figcaption class="uk-margin-small-top">1800x1200</figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container&#x22;&#x3E;
+            &#x3C;div id=&#x22;js-lightbox-animation&#x22; class=&#x22;uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l js-grid-masonry&#x22; uk-grid=&#x22;parallax: 150&#x22; masonry=&#x22;pack&#x22; uk-lightbox=&#x22;&#x22; animation=&#x22;slide&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-flex uk-flex-center&#x22;&#x3E;
+                    &#x3C;a class=&#x22;uk-inline uk-panel uk-link-muted uk-text-center&#x22; href=&#x22;https://placehold.co/1800x1200&#x22; caption=&#x22;1800x1200&#x22; data-alt=&#x22;The value for the image alt attribute&#x22; role=&#x22;button&#x22;&#x3E;
+                        &#x3C;figure&#x3E;
+                            &#x3C;img src=&#x22;https://placehold.co/400x267&#x22; width=&#x22;400&#x22; height=&#x22;267&#x22; alt=&#x22;&#x22;&#x3E;
+                            &#x3C;figcaption class=&#x22;uk-margin-small-top&#x22;&#x3E;1800x1200&#x3C;/figcaption&#x3E;
+                        &#x3C;/figure&#x3E;
+                    &#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="uk-padding-small uk-section-primary uk-text-center">
+        <footer>
+            <p class="uk-margin-remove uk-text-italic">
+                Feito com ❤️ por: <a href="https://github.com/leensc" target="_blank" rel="noopener"><span>Leandro do Nascimento</span></a>
+            </p>
+        </footer>
+    </section>
+</body>
+</html>
