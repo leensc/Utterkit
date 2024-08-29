@@ -27,6 +27,12 @@
     top: 0;
 }
 
+.utk-font-clamp-small {
+    font-size: clamp(1rem, 10 * 1vw, 2.5rem);
+    color: hsl(0, 0%, 95%);
+    filter: contrast(100%);
+}
+
 @media screen and (max-width: 960px) {
     .utk-img-auto\@m img.uk-invisible {
         display: none;

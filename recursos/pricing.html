@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A seção Pricing (ou Preços em português) é uma seção de preço em uma página, voltada principalmente para negócios online. A seção de preço pode conter diversos design dependendo do serviço a ser oferecido, mas em geral consiste em exibir os diferentes preços de forma clara e organizada para os clientes tomarem decisões de compra informadas. Ao utilizar a seção de preço em seu projeto, os usuários terão uma melhor experiência de compra, facilitando o processo na tomada de decisão, redução de dúvidas e demonstração de valor sobre qual serviço escolher. Você pode combinar essa seção com pacotes ou ofertas especiais, descontos e promoções, especificações, informações adicionais e entre outros.">
+    <meta name="author" content="Leandro do Nascimento">
+    <link rel="shortcut icon" href="../img/logo-primary.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <!-- UIkit -->
+    <link rel="stylesheet" href="../css/uikit.min.css">
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Utterkit -->
+    <link rel="stylesheet" href="../css/utterkit.css">
+
+    <!-- JQuery -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <title>Pricing | Utterkit</title>
+</head>
+<body>
+    <section class="uk-section-primary uk-section-primary">
+        <div id="offcanvas-push" uk-offcanvas="mode: push">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center uk-background-primary">
+                <button class="uk-offcanvas-close uk-close-large" type="button" uk-close uk-toggle="cls: uk-close-large; mode: media; media: @s"></button>
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" uk-nav>
+                    <li><a href="../index.html">Home</a></li>
+                    <hr>
+                    <li><a href="../instalacao.html">Instalação</a></li>
+                    <hr>
+                    <li class="uk-active"><a href="../recursos.html">Recursos</a></li>
+                    <hr>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <hr>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <hr>
+                    <li><a href="../termos-e-uso.html">Termos e Uso</a></li>
+                    <hr>
+                    <li><a href="../licenca.html">Licença</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="uk-navbar-container uk-navbar-transparent">
+            <div class="uk-container uk-container-large">
+                <div class="uk-margin-left uk-margin-right">
+                    <div uk-navbar="mode: click" class="uk-navbar uk-flex uk-flex-middle uk-flex-between">
+                        <div>
+                            <a href="../index.html" class="uk-navbar-item uk-logo">
+                                <img src="../img/logo-secondary.svg" width="30" height="30" alt="Logo Utterkit">
+                                <span class="uk-margin-small-left">Utterkit</span>
+                            </a>
+                        </div>
+                        <a href="#offcanvas-push" uk-toggle>
+                            <span uk-icon="icon: menu; ratio: 2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="uk-section uk-section-medium">
+        <div class="uk-container uk-container-medium">
+            <nav aria-label="Breadcrumb">
+                <ul class="uk-breadcrumb">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../recursos.html">Recursos</a></li>
+                    <li><span aria-current="page">Pricing</span></li>
+                </ul>
+            </nav>
+            <h1 class="uk-heading-large">Pricing</h1>
+            <h2>Estabeleça preços claros para os serviços, garantindo que o usuário compreenda exatamente o que está adquirindo</h2>
+            <p>
+                A seção <b>Pricing</b> (ou <em>Preços</em> em português) é uma seção de preço em uma página, voltada principalmente para negócios online. A
+                seção de preço pode conter diversos design dependendo do serviço a ser oferecido, mas em geral consiste em exibir os diferentes preços de forma
+                clara e organizada para os clientes tomarem decisões de compra informadas. Ao utilizar a seção de preço em seu projeto, os usuários terão uma melhor
+                experiência de compra, facilitando o processo na tomada de decisão, redução de dúvidas e demonstração de valor sobre qual serviço escolher.
+                Você pode combinar essa seção com pacotes ou ofertas especiais, descontos e promoções, especificações, informações adicionais e entre outros.
+            </p>
+            <hr class="uk-margin-medium-top">
+            <div>
+                <h2 uk-sticky="end: true; overflow-flip: false; offset: -1" class="uk-margin-small-bottom utk-owner-blurred-effect-owner">Pricing estático</h2>
+                <div class="uk-padding-small utk-owner-box-style">
+                    <h3 id="pricing-estatico-estilo-01">Estilo 01</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-text-center uk-child-width-1-2@m uk-child-width-1-3@l">
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-default">
+                                                <div>
+                                                    <h3 class="uk-card-title uk-text-small uk-text-uppercase">Profissional</h3>
+                                                    <p>Great for startups</p>
+                                                    <hr>
+                                                    <div>
+                                                        <span class="uk-heading-medium">$</span>
+                                                        <span class="uk-heading-medium">29</span>
+                                                    </div>
+                                                    <div class="uk-text-small uk-margin-small-top">MONTHLY</div>
+                                                    <ul class="uk-list">
+                                                        <li>Administrative panel</li>
+                                                        <li>Pre-built email templates</li>
+                                                        <li>10.000 requests per day</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="uk-button uk-border-pill uk-button-default uk-button-large uk-margin-medium-top">Get Started</a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-primary">
+                                                <div class="uk-ligeht">
+                                                    <h3 class="uk-card-title uk-text-small uk-text-uppercase">Advanced</h3>
+                                                    <p>Great for medium business</p>
+                                                    <hr>
+                                                    <div>
+                                                        <span class="uk-heading-medium">$</span>
+                                                        <span class="uk-heading-medium">79</span>
+                                                    </div>
+                                                    <div class="uk-text-small uk-margin-small-top">MONTHLY</div>
+                                                    <ul class="uk-list">
+                                                        <li>Personalized Onboarding</li>
+                                                        <li>Campaign manager</li>
+                                                        <li>45.000 requests per day</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="uk-button uk-border-pill uk-button-default uk-button-large uk-margin-medium-top">Get Started</a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-default">
+                                                <div>
+                                                    <h3 class="uk-card-title uk-text-small uk-text-uppercase">Expert</h3>
+                                                    <p>Great for large companies</p>
+                                                    <hr>
+                                                    <div>
+                                                        <span class="uk-heading-medium">$</span>
+                                                        <span class="uk-heading-medium">149</span>
+                                                    </div>
+                                                    <div class="uk-text-small uk-margin-small-top">MONTHLY</div>
+                                                    <ul class="uk-list">
+                                                        <li>Multivariate and A/B testing</li>
+                                                        <li>Dedicated Onboarding</li>
+                                                        <li>140.000 requests per day</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="uk-button uk-border-pill uk-button-default uk-button-large uk-margin-medium-top">Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen1"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share1"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen1" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-text-center uk-child-width-1-2@m uk-child-width-1-3@l">
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-default">
+                                                <div>
+                                                    <h3 class="uk-card-title uk-text-small uk-text-uppercase">Profissional</h3>
+                                                    <p>Great for startups</p>
+                                                    <hr>
+                                                    <div>
+                                                        <span class="uk-heading-medium">$</span>
+                                                        <span class="uk-heading-medium">29</span>
+                                                    </div>
+                                                    <div class="uk-text-small uk-margin-small-top">MONTHLY</div>
+                                                    <ul class="uk-list">
+                                                        <li>Administrative panel</li>
+                                                        <li>Pre-built email templates</li>
+                                                        <li>10.000 requests per day</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="uk-button uk-border-pill uk-button-default uk-button-large uk-margin-medium-top">Get Started</a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-primary">
+                                                <div class="uk-ligeht">
+                                                    <h3 class="uk-card-title uk-text-small uk-text-uppercase">Advanced</h3>
+                                                    <p>Great for medium business</p>
+                                                    <hr>
+                                                    <div>
+                                                        <span class="uk-heading-medium">$</span>
+                                                        <span class="uk-heading-medium">79</span>
+                                                    </div>
+                                                    <div class="uk-text-small uk-margin-small-top">MONTHLY</div>
+                                                    <ul class="uk-list">
+                                                        <li>Personalized Onboarding</li>
+                                                        <li>Campaign manager</li>
+                                                        <li>45.000 requests per day</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="uk-button uk-border-pill uk-button-default uk-button-large uk-margin-medium-top">Get Started</a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-default">
+                                                <div>
+                                                    <h3 class="uk-card-title uk-text-small uk-text-uppercase">Expert</h3>
+                                                    <p>Great for large companies</p>
+                                                    <hr>
+                                                    <div>
+                                                        <span class="uk-heading-medium">$</span>
+                                                        <span class="uk-heading-medium">149</span>
+                                                    </div>
+                                                    <div class="uk-text-small uk-margin-small-top">MONTHLY</div>
+                                                    <ul class="uk-list">
+                                                        <li>Multivariate and A/B testing</li>
+                                                        <li>Dedicated Onboarding</li>
+                                                        <li>140.000 requests per day</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="uk-button uk-border-pill uk-button-default uk-button-large uk-margin-medium-top">Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share1" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/pricing.html#pricing-estatico-estilo-01
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/pricing.html#pricing-estatico-estilo-01
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section">
+                                <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-text-center uk-child-width-1-2@m uk-child-width-1-3@l">
+                                    <div class="uk-padding-small">
+                                        <div class="uk-card uk-card-body uk-section-default">
+                                            <div>
+                                                <h3 class="uk-card-title uk-text-small uk-text-uppercase">Profissional</h3>
+                                                <p>Great for startups</p>
+                                                <hr>
+                                                <div>
+                                                    <span class="uk-heading-medium">$</span>
+                                                    <span class="uk-heading-medium">29</span>
+                                                </div>
+                                                <div class="uk-text-small uk-margin-small-top">MONTHLY</div>
+                                                <ul class="uk-list">
+                                                    <li>Administrative panel</li>
+                                                    <li>Pre-built email templates</li>
+                                                    <li>10.000 requests per day</li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="uk-button uk-border-pill uk-button-default uk-button-large uk-margin-medium-top">Get Started</a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-padding-small">
+                                        <div class="uk-card uk-card-body uk-section-primary">
+                                            <div class="uk-ligeht">
+                                                <h3 class="uk-card-title uk-text-small uk-text-uppercase">Advanced</h3>
+                                                <p>Great for medium business</p>
+                                                <hr>
+                                                <div>
+                                                    <span class="uk-heading-medium">$</span>
+                                                    <span class="uk-heading-medium">79</span>
+                                                </div>
+                                                <div class="uk-text-small uk-margin-small-top">MONTHLY</div>
+                                                <ul class="uk-list">
+                                                    <li>Personalized Onboarding</li>
+                                                    <li>Campaign manager</li>
+                                                    <li>45.000 requests per day</li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="uk-button uk-border-pill uk-button-default uk-button-large uk-margin-medium-top">Get Started</a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-padding-small">
+                                        <div class="uk-card uk-card-body uk-section-default">
+                                            <div>
+                                                <h3 class="uk-card-title uk-text-small uk-text-uppercase">Expert</h3>
+                                                <p>Great for large companies</p>
+                                                <hr>
+                                                <div>
+                                                    <span class="uk-heading-medium">$</span>
+                                                    <span class="uk-heading-medium">149</span>
+                                                </div>
+                                                <div class="uk-text-small uk-margin-small-top">MONTHLY</div>
+                                                <ul class="uk-list">
+                                                    <li>Multivariate and A/B testing</li>
+                                                    <li>Dedicated Onboarding</li>
+                                                    <li>140.000 requests per day</li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="uk-button uk-border-pill uk-button-default uk-button-large uk-margin-medium-top">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-text-center uk-child-width-1-2@m uk-child-width-1-3@l&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-card uk-card-body uk-section-default&#x22;&#x3E;
+                    &#x3C;div&#x3E;
+                        &#x3C;h3 class=&#x22;uk-card-title uk-text-small uk-text-uppercase&#x22;&#x3E;Profissional&#x3C;/h3&#x3E;
+                        &#x3C;p&#x3E;Great for startups&#x3C;/p&#x3E;
+                        &#x3C;hr&#x3E;
+                        &#x3C;div&#x3E;
+                            &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;$&#x3C;/span&#x3E;
+                            &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;29&#x3C;/span&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;uk-text-small uk-margin-small-top&#x22;&#x3E;MONTHLY&#x3C;/div&#x3E;
+                        &#x3C;ul class=&#x22;uk-list&#x22;&#x3E;
+                            &#x3C;li&#x3E;Administrative panel&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;Pre-built email templates&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;10.000 requests per day&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-border-pill uk-button-default uk-button-large uk-margin-medium-top&#x22;&#x3E;Get Started&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-card uk-card-body uk-section-primary&#x22;&#x3E;
+                    &#x3C;div class=&#x22;uk-ligeht&#x22;&#x3E;
+                        &#x3C;h3 class=&#x22;uk-card-title uk-text-small uk-text-uppercase&#x22;&#x3E;Advanced&#x3C;/h3&#x3E;
+                        &#x3C;p&#x3E;Great for medium business&#x3C;/p&#x3E;
+                        &#x3C;hr&#x3E;
+                        &#x3C;div&#x3E;
+                            &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;$&#x3C;/span&#x3E;
+                            &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;79&#x3C;/span&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;uk-text-small uk-margin-small-top&#x22;&#x3E;MONTHLY&#x3C;/div&#x3E;
+                        &#x3C;ul class=&#x22;uk-list&#x22;&#x3E;
+                            &#x3C;li&#x3E;Personalized Onboarding&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;Campaign manager&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;45.000 requests per day&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-border-pill uk-button-default uk-button-large uk-margin-medium-top&#x22;&#x3E;Get Started&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-card uk-card-body uk-section-default&#x22;&#x3E;
+                    &#x3C;div&#x3E;
+                        &#x3C;h3 class=&#x22;uk-card-title uk-text-small uk-text-uppercase&#x22;&#x3E;Expert&#x3C;/h3&#x3E;
+                        &#x3C;p&#x3E;Great for large companies&#x3C;/p&#x3E;
+                        &#x3C;hr&#x3E;
+                        &#x3C;div&#x3E;
+                            &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;$&#x3C;/span&#x3E;
+                            &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;149&#x3C;/span&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;uk-text-small uk-margin-small-top&#x22;&#x3E;MONTHLY&#x3C;/div&#x3E;
+                        &#x3C;ul class=&#x22;uk-list&#x22;&#x3E;
+                            &#x3C;li&#x3E;Multivariate and A/B testing&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;Dedicated Onboarding&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;140.000 requests per day&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-border-pill uk-button-default uk-button-large uk-margin-medium-top&#x22;&#x3E;Get Started&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="pricing-estatico-estilo-02">Estilo 02</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-text-center uk-child-width-1-2@m uk-child-width-1-3@l">
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-default">
+                                                <span class="uk-margin-medium-top" uk-icon="icon: cloud-upload; ratio: 3"></span>
+                                                <h3 class="uk-card-title">Profissional</h3>
+                                                <p>Great for startups</p>
+                                                <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                    <div>
+                                                        <span class="uk-heading-medium">$</span>
+                                                        <span class="uk-heading-medium">29</span>
+                                                    </div>
+                                                    <div class="uk-text-small">/ MONTHLY</div>
+                                                </div>
+                                                <hr>
+                                                <ul class="uk-list uk-margin-medium-top">
+                                                    <li><span style="margin-right: 2px" uk-icon="icon: check; ratio: 1"></span>Administrative panel</li>
+                                                    <li><span style="margin-right: 2px" uk-icon="icon: check; ratio: 1"></span>Pre-built email templates</li>
+                                                    <li><span style="margin-right: 2px" uk-icon="icon: check; ratio: 1"></span>10.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-default uk-button-large uk-border-pill uk-margin-top uk-margin-medium-bottom">Get Started</a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-primary">
+                                                <span class="uk-margin-medium-top" uk-icon="icon: server; ratio: 3"></span>
+                                                <h3 class="uk-card-title">Advanced</h3>
+                                                <p>Great for medium business</p>
+                                                <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                    <div>
+                                                        <span class="uk-heading-medium">$</span>
+                                                        <span class="uk-heading-medium">79</span>
+                                                    </div>
+                                                    <div class="uk-text-small">/ MONTHLY</div>
+                                                </div>
+                                                <hr>
+                                                <ul class="uk-list uk-margin-medium-top">
+                                                    <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>Personalized Onboarding</li>
+                                                    <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>Campaign manager</li>
+                                                    <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>45.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-default uk-button-large uk-border-pill uk-margin-top uk-margin-medium-bottom">Get Started</a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-default">
+                                                <span class="uk-margin-medium-top" uk-icon="icon: database; ratio: 3"></span>
+                                                <h3 class="uk-card-title">Expert</h3>
+                                                <p>Great for large companies</p>
+                                                <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                    <div>
+                                                        <span class="uk-heading-medium">$</span>
+                                                        <span class="uk-heading-medium">149</span>
+                                                    </div>
+                                                    <div class="uk-text-small">/ MONTHLY</div>
+                                                </div>
+                                                <hr>
+                                                <ul class="uk-list uk-margin-medium-top">
+                                                    <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>Multivariate and A/B testing</li>
+                                                    <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>Dedicated Onboarding</li>
+                                                    <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>140.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-default uk-button-large uk-border-pill uk-margin-top uk-margin-medium-bottom">Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen2"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share2"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen2" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-text-center uk-child-width-1-2@m uk-child-width-1-3@l">
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-default">
+                                                <span class="uk-margin-medium-top" uk-icon="icon: cloud-upload; ratio: 3"></span>
+                                                <h3 class="uk-card-title">Profissional</h3>
+                                                <p>Great for startups</p>
+                                                <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                    <div>
+                                                        <span class="uk-heading-medium">$</span>
+                                                        <span class="uk-heading-medium">29</span>
+                                                    </div>
+                                                    <div class="uk-text-small">/ MONTHLY</div>
+                                                </div>
+                                                <hr>
+                                                <ul class="uk-list uk-margin-medium-top">
+                                                    <li><span style="margin-right: 2px" uk-icon="icon: check; ratio: 1"></span>Administrative panel</li>
+                                                    <li><span style="margin-right: 2px" uk-icon="icon: check; ratio: 1"></span>Pre-built email templates</li>
+                                                    <li><span style="margin-right: 2px" uk-icon="icon: check; ratio: 1"></span>10.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-default uk-button-large uk-border-pill uk-margin-top uk-margin-medium-bottom">Get Started</a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-primary">
+                                                <span class="uk-margin-medium-top" uk-icon="icon: server; ratio: 3"></span>
+                                                <h3 class="uk-card-title">Advanced</h3>
+                                                <p>Great for medium business</p>
+                                                <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                    <div>
+                                                        <span class="uk-heading-medium">$</span>
+                                                        <span class="uk-heading-medium">79</span>
+                                                    </div>
+                                                    <div class="uk-text-small">/ MONTHLY</div>
+                                                </div>
+                                                <hr>
+                                                <ul class="uk-list uk-margin-medium-top">
+                                                    <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>Personalized Onboarding</li>
+                                                    <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>Campaign manager</li>
+                                                    <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>45.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-default uk-button-large uk-border-pill uk-margin-top uk-margin-medium-bottom">Get Started</a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-default">
+                                                <span class="uk-margin-medium-top" uk-icon="icon: database; ratio: 3"></span>
+                                                <h3 class="uk-card-title">Expert</h3>
+                                                <p>Great for large companies</p>
+                                                <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                    <div>
+                                                        <span class="uk-heading-medium">$</span>
+                                                        <span class="uk-heading-medium">149</span>
+                                                    </div>
+                                                    <div class="uk-text-small">/ MONTHLY</div>
+                                                </div>
+                                                <hr>
+                                                <ul class="uk-list uk-margin-medium-top">
+                                                    <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>Multivariate and A/B testing</li>
+                                                    <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>Dedicated Onboarding</li>
+                                                    <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>140.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-default uk-button-large uk-border-pill uk-margin-top uk-margin-medium-bottom">Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share2" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/pricing.html#pricing-estatico-estilo-02
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/pricing.html#pricing-estatico-estilo-02
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section">
+                                <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-text-center uk-child-width-1-2@m uk-child-width-1-3@l">
+                                    <div class="uk-padding-small">
+                                        <div class="uk-card uk-card-body uk-section-default">
+                                            <span class="uk-margin-medium-top" uk-icon="icon: cloud-upload; ratio: 3"></span>
+                                            <h3 class="uk-card-title">Profissional</h3>
+                                            <p>Great for startups</p>
+                                            <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                <div>
+                                                    <span class="uk-heading-medium">$</span>
+                                                    <span class="uk-heading-medium">29</span>
+                                                </div>
+                                                <div class="uk-text-small">/ MONTHLY</div>
+                                            </div>
+                                            <hr>
+                                            <ul class="uk-list uk-margin-medium-top">
+                                                <li><span style="margin-right: 2px" uk-icon="icon: check; ratio: 1"></span>Administrative panel</li>
+                                                <li><span style="margin-right: 2px" uk-icon="icon: check; ratio: 1"></span>Pre-built email templates</li>
+                                                <li><span style="margin-right: 2px" uk-icon="icon: check; ratio: 1"></span>10.000 requests per day</li>
+                                            </ul>
+                                            <a href="#" class="uk-button uk-button-default uk-button-large uk-border-pill uk-margin-top uk-margin-medium-bottom">Get Started</a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-padding-small">
+                                        <div class="uk-card uk-card-body uk-section-primary">
+                                            <span class="uk-margin-medium-top" uk-icon="icon: server; ratio: 3"></span>
+                                            <h3 class="uk-card-title">Advanced</h3>
+                                            <p>Great for medium business</p>
+                                            <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                <div>
+                                                    <span class="uk-heading-medium">$</span>
+                                                    <span class="uk-heading-medium">79</span>
+                                                </div>
+                                                <div class="uk-text-small">/ MONTHLY</div>
+                                            </div>
+                                            <hr>
+                                            <ul class="uk-list uk-margin-medium-top">
+                                                <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>Personalized Onboarding</li>
+                                                <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>Campaign manager</li>
+                                                <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>45.000 requests per day</li>
+                                            </ul>
+                                            <a href="#" class="uk-button uk-button-default uk-button-large uk-border-pill uk-margin-top uk-margin-medium-bottom">Get Started</a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-padding-small">
+                                        <div class="uk-card uk-card-body uk-section-default">
+                                            <span class="uk-margin-medium-top" uk-icon="icon: database; ratio: 3"></span>
+                                            <h3 class="uk-card-title">Expert</h3>
+                                            <p>Great for large companies</p>
+                                            <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                <div>
+                                                    <span class="uk-heading-medium">$</span>
+                                                    <span class="uk-heading-medium">149</span>
+                                                </div>
+                                                <div class="uk-text-small">/ MONTHLY</div>
+                                            </div>
+                                            <hr>
+                                            <ul class="uk-list uk-margin-medium-top">
+                                                <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>Multivariate and A/B testing</li>
+                                                <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>Dedicated Onboarding</li>
+                                                <li><span style="margin-right: 2px"  uk-icon="icon: check; ratio: 1"></span>140.000 requests per day</li>
+                                            </ul>
+                                            <a href="#" class="uk-button uk-button-default uk-button-large uk-border-pill uk-margin-top uk-margin-medium-bottom">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-text-center uk-child-width-1-2@m uk-child-width-1-3@l&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-card uk-card-body uk-section-default&#x22;&#x3E;
+                    &#x3C;span class=&#x22;uk-margin-medium-top&#x22; uk-icon=&#x22;icon: cloud-upload; ratio: 3&#x22;&#x3E;&#x3C;/span&#x3E;
+                    &#x3C;h3 class=&#x22;uk-card-title&#x22;&#x3E;Profissional&#x3C;/h3&#x3E;
+                    &#x3C;p&#x3E;Great for startups&#x3C;/p&#x3E;
+                    &#x3C;div class=&#x22;uk-flex uk-flex-bottom uk-flex-center&#x22;&#x3E;
+                        &#x3C;div&#x3E;
+                            &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;$&#x3C;/span&#x3E;
+                            &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;29&#x3C;/span&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;uk-text-small&#x22;&#x3E;/ MONTHLY&#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;hr&#x3E;
+                    &#x3C;ul class=&#x22;uk-list uk-margin-medium-top&#x22;&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 2px&#x22; uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;Administrative panel&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 2px&#x22; uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;Pre-built email templates&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 2px&#x22; uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;10.000 requests per day&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-default uk-button-large uk-border-pill uk-margin-top uk-margin-medium-bottom&#x22;&#x3E;Get Started&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-card uk-card-body uk-section-primary&#x22;&#x3E;
+                    &#x3C;span class=&#x22;uk-margin-medium-top&#x22; uk-icon=&#x22;icon: server; ratio: 3&#x22;&#x3E;&#x3C;/span&#x3E;
+                    &#x3C;h3 class=&#x22;uk-card-title&#x22;&#x3E;Advanced&#x3C;/h3&#x3E;
+                    &#x3C;p&#x3E;Great for medium business&#x3C;/p&#x3E;
+                    &#x3C;div class=&#x22;uk-flex uk-flex-bottom uk-flex-center&#x22;&#x3E;
+                        &#x3C;div&#x3E;
+                            &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;$&#x3C;/span&#x3E;
+                            &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;79&#x3C;/span&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;uk-text-small&#x22;&#x3E;/ MONTHLY&#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;hr&#x3E;
+                    &#x3C;ul class=&#x22;uk-list uk-margin-medium-top&#x22;&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 2px&#x22;  uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;Personalized Onboarding&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 2px&#x22;  uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;Campaign manager&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 2px&#x22;  uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;45.000 requests per day&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-default uk-button-large uk-border-pill uk-margin-top uk-margin-medium-bottom&#x22;&#x3E;Get Started&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-card uk-card-body uk-section-default&#x22;&#x3E;
+                    &#x3C;span class=&#x22;uk-margin-medium-top&#x22; uk-icon=&#x22;icon: database; ratio: 3&#x22;&#x3E;&#x3C;/span&#x3E;
+                    &#x3C;h3 class=&#x22;uk-card-title&#x22;&#x3E;Expert&#x3C;/h3&#x3E;
+                    &#x3C;p&#x3E;Great for large companies&#x3C;/p&#x3E;
+                    &#x3C;div class=&#x22;uk-flex uk-flex-bottom uk-flex-center&#x22;&#x3E;
+                        &#x3C;div&#x3E;
+                            &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;$&#x3C;/span&#x3E;
+                            &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;149&#x3C;/span&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;div class=&#x22;uk-text-small&#x22;&#x3E;/ MONTHLY&#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;hr&#x3E;
+                    &#x3C;ul class=&#x22;uk-list uk-margin-medium-top&#x22;&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 2px&#x22;  uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;Multivariate and A/B testing&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 2px&#x22;  uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;Dedicated Onboarding&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 2px&#x22;  uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;140.000 requests per day&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-default uk-button-large uk-border-pill uk-margin-top uk-margin-medium-bottom&#x22;&#x3E;Get Started&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="pricing-estatico-estilo-03">Estilo 03</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-text-center uk-grid-match uk-child-width-1-2@m uk-child-width-1-3@l">
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted uk-position-relative">
+                                                <h3 class="uk-card-title uk-margin-medium-top uk-text-uppercase">Profissional</h3>
+                                                <div>
+                                                    <span class="uk-heading-medium">$</span>
+                                                    <span class="uk-heading-medium">29</span>
+                                                </div>
+                                                <p>Great for startups</p>
+                                                <div class="uk-position-relative">
+                                                    <hr class="uk-margin-medium-top uk-margin-medium-bottom">
+                                                    <span class="uk-position-center uk-text-bold uk-text-uppercase utk-font-clamp-small">Profissional</span>
+                                                </div>
+                                                <ul class="uk-list" style="margin-bottom: 60px;">
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Administrative panel</li>
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Pre-built email templates</li>
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>10.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-secondary uk-button-large uk-position-bottom">Get Started</a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted uk-position-relative">
+                                                <h3 class="uk-card-title uk-margin-medium-top uk-text-uppercase">Advanced</h3>
+                                                <div>
+                                                    <span class="uk-heading-medium">$</span>
+                                                    <span class="uk-heading-medium">79</span>
+                                                </div>
+                                                <p>Great for medium business</p>
+                                                <div class="uk-position-relative">
+                                                    <hr class="uk-margin-medium-top uk-margin-medium-bottom">
+                                                    <span class="uk-position-center uk-text-bold uk-text-uppercase utk-font-clamp-small">Advanced</span>
+                                                </div>
+                                                <ul class="uk-list" style="margin-bottom: 60px;">
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Personalized Onboarding</li>
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Campaign manager</li>
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>45.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-primary uk-button-large uk-position-bottom">Get Started</a>
+                                                <div class="uk-background-primary uk-light uk-position-top-right uk-position-small uk-text-uppercase" style="padding: 8px 13px">best seller</div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted uk-position-relative">
+                                                <h3 class="uk-card-title uk-margin-medium-top uk-text-uppercase">Expert</h3>
+                                                <div>
+                                                    <span class="uk-heading-medium">$</span>
+                                                    <span class="uk-heading-medium">149</span>
+                                                </div>
+                                                <p>Great for large companies</p>
+                                                <div class="uk-position-relative">
+                                                    <hr class="uk-margin-medium-top uk-margin-medium-bottom">
+                                                    <span class="uk-position-center uk-text-bold uk-text-uppercase utk-font-clamp-small">Expert</span>
+                                                </div>
+                                                <ul class="uk-list" style="margin-bottom: 60px;">
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Multivariate and A/B testing</li>
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Dedicated Onboarding</li>
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>140.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-secondary uk-button-large uk-position-bottom">Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen3"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share3"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen3" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-text-center uk-grid-match uk-child-width-1-2@m uk-child-width-1-3@l">
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted uk-position-relative">
+                                                <h3 class="uk-card-title uk-margin-medium-top uk-text-uppercase">Profissional</h3>
+                                                <div>
+                                                    <span class="uk-heading-medium">$</span>
+                                                    <span class="uk-heading-medium">29</span>
+                                                </div>
+                                                <p>Great for startups</p>
+                                                <div class="uk-position-relative">
+                                                    <hr class="uk-margin-medium-top uk-margin-medium-bottom">
+                                                    <span class="uk-position-center uk-text-bold uk-text-uppercase utk-font-clamp-small">Profissional</span>
+                                                </div>
+                                                <ul class="uk-list" style="margin-bottom: 60px;">
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Administrative panel</li>
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Pre-built email templates</li>
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>10.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-secondary uk-button-large uk-position-bottom">Get Started</a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted uk-position-relative">
+                                                <h3 class="uk-card-title uk-margin-medium-top uk-text-uppercase">Advanced</h3>
+                                                <div>
+                                                    <span class="uk-heading-medium">$</span>
+                                                    <span class="uk-heading-medium">79</span>
+                                                </div>
+                                                <p>Great for medium business</p>
+                                                <div class="uk-position-relative">
+                                                    <hr class="uk-margin-medium-top uk-margin-medium-bottom">
+                                                    <span class="uk-position-center uk-text-bold uk-text-uppercase utk-font-clamp-small">Advanced</span>
+                                                </div>
+                                                <ul class="uk-list" style="margin-bottom: 60px;">
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Personalized Onboarding</li>
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Campaign manager</li>
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>45.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-primary uk-button-large uk-position-bottom">Get Started</a>
+                                                <div class="uk-background-primary uk-light uk-position-top-right uk-position-small uk-text-uppercase" style="padding: 8px 13px">best seller</div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted uk-position-relative">
+                                                <h3 class="uk-card-title uk-margin-medium-top uk-text-uppercase">Expert</h3>
+                                                <div>
+                                                    <span class="uk-heading-medium">$</span>
+                                                    <span class="uk-heading-medium">149</span>
+                                                </div>
+                                                <p>Great for large companies</p>
+                                                <div class="uk-position-relative">
+                                                    <hr class="uk-margin-medium-top uk-margin-medium-bottom">
+                                                    <span class="uk-position-center uk-text-bold uk-text-uppercase utk-font-clamp-small">Expert</span>
+                                                </div>
+                                                <ul class="uk-list" style="margin-bottom: 60px;">
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Multivariate and A/B testing</li>
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Dedicated Onboarding</li>
+                                                    <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>140.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-secondary uk-button-large uk-position-bottom">Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share3" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/pricing.html#pricing-estatico-estilo-03
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/pricing.html#pricing-estatico-estilo-03
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section">
+                                <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-text-center uk-grid-match uk-child-width-1-2@m uk-child-width-1-3@l">
+                                    <div class="uk-padding-small">
+                                        <div class="uk-card uk-card-body uk-section-muted uk-position-relative">
+                                            <h3 class="uk-card-title uk-margin-medium-top uk-text-uppercase">Profissional</h3>
+                                            <div>
+                                                <span class="uk-heading-medium">$</span>
+                                                <span class="uk-heading-medium">29</span>
+                                            </div>
+                                            <p>Great for startups</p>
+                                            <div class="uk-position-relative">
+                                                <hr class="uk-margin-medium-top uk-margin-medium-bottom">
+                                                <span class="uk-position-center uk-text-bold uk-text-uppercase utk-font-clamp-small">Profissional</span>
+                                            </div>
+                                            <ul class="uk-list" style="margin-bottom: 60px;">
+                                                <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Administrative panel</li>
+                                                <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Pre-built email templates</li>
+                                                <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>10.000 requests per day</li>
+                                            </ul>
+                                            <a href="#" class="uk-button uk-button-secondary uk-button-large uk-position-bottom">Get Started</a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-padding-small">
+                                        <div class="uk-card uk-card-body uk-section-muted uk-position-relative">
+                                            <h3 class="uk-card-title uk-margin-medium-top uk-text-uppercase">Advanced</h3>
+                                            <div>
+                                                <span class="uk-heading-medium">$</span>
+                                                <span class="uk-heading-medium">79</span>
+                                            </div>
+                                            <p>Great for medium business</p>
+                                            <div class="uk-position-relative">
+                                                <hr class="uk-margin-medium-top uk-margin-medium-bottom">
+                                                <span class="uk-position-center uk-text-bold uk-text-uppercase utk-font-clamp-small">Advanced</span>
+                                            </div>
+                                            <ul class="uk-list" style="margin-bottom: 60px;">
+                                                <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Personalized Onboarding</li>
+                                                <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Campaign manager</li>
+                                                <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>45.000 requests per day</li>
+                                            </ul>
+                                            <a href="#" class="uk-button uk-button-primary uk-button-large uk-position-bottom">Get Started</a>
+                                            <div class="uk-background-primary uk-light uk-position-top-right uk-position-small uk-text-uppercase" style="padding: 8px 13px">best seller</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-padding-small">
+                                        <div class="uk-card uk-card-body uk-section-muted uk-position-relative">
+                                            <h3 class="uk-card-title uk-margin-medium-top uk-text-uppercase">Expert</h3>
+                                            <div>
+                                                <span class="uk-heading-medium">$</span>
+                                                <span class="uk-heading-medium">149</span>
+                                            </div>
+                                            <p>Great for large companies</p>
+                                            <div class="uk-position-relative">
+                                                <hr class="uk-margin-medium-top uk-margin-medium-bottom">
+                                                <span class="uk-position-center uk-text-bold uk-text-uppercase utk-font-clamp-small">Expert</span>
+                                            </div>
+                                            <ul class="uk-list" style="margin-bottom: 60px;">
+                                                <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Multivariate and A/B testing</li>
+                                                <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>Dedicated Onboarding</li>
+                                                <li><span style="margin-right: 3px" uk-icon="icon: check; ratio: 1"></span>140.000 requests per day</li>
+                                            </ul>
+                                            <a href="#" class="uk-button uk-button-secondary uk-button-large uk-position-bottom">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-text-center uk-grid-match uk-child-width-1-2@m uk-child-width-1-3@l&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-card uk-card-body uk-section-muted uk-position-relative&#x22;&#x3E;
+                    &#x3C;h3 class=&#x22;uk-card-title uk-margin-medium-top uk-text-uppercase&#x22;&#x3E;Profissional&#x3C;/h3&#x3E;
+                    &#x3C;div&#x3E;
+                        &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;$&#x3C;/span&#x3E;
+                        &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;29&#x3C;/span&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;p&#x3E;Great for startups&#x3C;/p&#x3E;
+                    &#x3C;div class=&#x22;uk-position-relative&#x22;&#x3E;
+                        &#x3C;hr class=&#x22;uk-margin-medium-top uk-margin-medium-bottom&#x22;&#x3E;
+                        &#x3C;span class=&#x22;uk-position-center uk-text-bold uk-text-uppercase utk-font-clamp-small&#x22;&#x3E;Profissional&#x3C;/span&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;ul class=&#x22;uk-list&#x22; style=&#x22;margin-bottom: 60px;&#x22;&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 3px&#x22; uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;Administrative panel&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 3px&#x22; uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;Pre-built email templates&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 3px&#x22; uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;10.000 requests per day&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-secondary uk-button-large uk-position-bottom&#x22;&#x3E;Get Started&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-card uk-card-body uk-section-muted uk-position-relative&#x22;&#x3E;
+                    &#x3C;h3 class=&#x22;uk-card-title uk-margin-medium-top uk-text-uppercase&#x22;&#x3E;Advanced&#x3C;/h3&#x3E;
+                    &#x3C;div&#x3E;
+                        &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;$&#x3C;/span&#x3E;
+                        &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;79&#x3C;/span&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;p&#x3E;Great for medium business&#x3C;/p&#x3E;
+                    &#x3C;div class=&#x22;uk-position-relative&#x22;&#x3E;
+                        &#x3C;hr class=&#x22;uk-margin-medium-top uk-margin-medium-bottom&#x22;&#x3E;
+                        &#x3C;span class=&#x22;uk-position-center uk-text-bold uk-text-uppercase utk-font-clamp-small&#x22;&#x3E;Advanced&#x3C;/span&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;ul class=&#x22;uk-list&#x22; style=&#x22;margin-bottom: 60px;&#x22;&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 3px&#x22; uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;Personalized Onboarding&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 3px&#x22; uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;Campaign manager&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 3px&#x22; uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;45.000 requests per day&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-primary uk-button-large uk-position-bottom&#x22;&#x3E;Get Started&#x3C;/a&#x3E;
+                    &#x3C;div class=&#x22;uk-background-primary uk-light uk-position-top-right uk-position-small uk-text-uppercase&#x22; style=&#x22;padding: 8px 13px&#x22;&#x3E;best seller&#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-card uk-card-body uk-section-muted uk-position-relative&#x22;&#x3E;
+                    &#x3C;h3 class=&#x22;uk-card-title uk-margin-medium-top uk-text-uppercase&#x22;&#x3E;Expert&#x3C;/h3&#x3E;
+                    &#x3C;div&#x3E;
+                        &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;$&#x3C;/span&#x3E;
+                        &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;149&#x3C;/span&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;p&#x3E;Great for large companies&#x3C;/p&#x3E;
+                    &#x3C;div class=&#x22;uk-position-relative&#x22;&#x3E;
+                        &#x3C;hr class=&#x22;uk-margin-medium-top uk-margin-medium-bottom&#x22;&#x3E;
+                        &#x3C;span class=&#x22;uk-position-center uk-text-bold uk-text-uppercase utk-font-clamp-small&#x22;&#x3E;Expert&#x3C;/span&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;ul class=&#x22;uk-list&#x22; style=&#x22;margin-bottom: 60px;&#x22;&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 3px&#x22; uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;Multivariate and A/B testing&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 3px&#x22; uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;Dedicated Onboarding&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;&#x3C;span style=&#x22;margin-right: 3px&#x22; uk-icon=&#x22;icon: check; ratio: 1&#x22;&#x3E;&#x3C;/span&#x3E;140.000 requests per day&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-secondary uk-button-large uk-position-bottom&#x22;&#x3E;Get Started&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>
+<pre>
+<code>
+    .utk-font-clamp-small {
+        font-size: clamp(1rem, 10 * 1vw, 2.5rem);
+        color: hsl(0, 0%, 95%);
+        filter: contrast(100%);
+    }
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="pricing-estatico-estilo-04">Estilo 04</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-text-center uk-child-width-1-2@m uk-child-width-1-3@l">
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted">
+                                                <div class="uk-margin-medium-top">
+                                                    <h3 class="uk-card-title uk-text-small uk-text-uppercase uk-text-bold">Profissional</h3>
+                                                    <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                        <div>
+                                                            <span class="uk-heading-medium">$</span>
+                                                            <span class="uk-heading-medium">29</span>
+                                                        </div>
+                                                        <div class="uk-text-small uk-text-bold">/ MONTHLY</div>
+                                                    </div>
+                                                </div>
+                                                <ul class="uk-list uk-list-divider uk-margin-medium-top">
+                                                    <li>Administrative panel</li>
+                                                    <li>Pre-built email templates</li>
+                                                    <li>10.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-secondary uk-button-large uk-margin-top">Get Started</a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted">
+                                                <div class="uk-margin-medium-top">
+                                                    <h3 class="uk-card-title uk-text-small uk-text-uppercase uk-text-bold">Advanced</h3>
+                                                    <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                        <div>
+                                                            <span class="uk-heading-medium">$</span>
+                                                            <span class="uk-heading-medium">79</span>
+                                                        </div>
+                                                        <div class="uk-text-small uk-text-bold">/ MONTHLY</div>
+                                                    </div>
+                                                </div>
+                                                <ul class="uk-list uk-list-divider uk-margin-medium-top">
+                                                    <li>Personalized Onboarding</li>
+                                                    <li>Campaign manager</li>
+                                                    <li>45.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-primary uk-button-large uk-margin-top">Get Started</a>
+                                                <div class="uk-background-primary uk-light uk-position-top-right uk-position-small uk-text-small uk-text-uppercase uk-text-bold" style="padding: 3px 13px">best seller</div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted">
+                                                <div class="uk-margin-medium-top">
+                                                    <h3 class="uk-card-title uk-text-small uk-text-uppercase uk-text-bold">Expert</h3>
+                                                    <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                        <div>
+                                                            <span class="uk-heading-medium">$</span>
+                                                            <span class="uk-heading-medium">149</span>
+                                                        </div>
+                                                        <div class="uk-text-small uk-text-bold">/ MONTHLY</div>
+                                                    </div>
+                                                </div>
+                                                <ul class="uk-list uk-list-divider uk-margin-medium-top">
+                                                    <li>Multivariate and A/B testing</li>
+                                                    <li>Dedicated Onboarding</li>
+                                                    <li>140.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-secondary uk-button-large uk-margin-top">Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen4"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share4"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen4" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-text-center uk-child-width-1-2@m uk-child-width-1-3@l">
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted">
+                                                <div class="uk-margin-medium-top">
+                                                    <h3 class="uk-card-title uk-text-small uk-text-uppercase uk-text-bold">Profissional</h3>
+                                                    <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                        <div>
+                                                            <span class="uk-heading-medium">$</span>
+                                                            <span class="uk-heading-medium">29</span>
+                                                        </div>
+                                                        <div class="uk-text-small uk-text-bold">/ MONTHLY</div>
+                                                    </div>
+                                                </div>
+                                                <ul class="uk-list uk-list-divider uk-margin-medium-top">
+                                                    <li>Administrative panel</li>
+                                                    <li>Pre-built email templates</li>
+                                                    <li>10.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-secondary uk-button-large uk-margin-top">Get Started</a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted">
+                                                <div class="uk-margin-medium-top">
+                                                    <h3 class="uk-card-title uk-text-small uk-text-uppercase uk-text-bold">Advanced</h3>
+                                                    <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                        <div>
+                                                            <span class="uk-heading-medium">$</span>
+                                                            <span class="uk-heading-medium">79</span>
+                                                        </div>
+                                                        <div class="uk-text-small uk-text-bold">/ MONTHLY</div>
+                                                    </div>
+                                                </div>
+                                                <ul class="uk-list uk-list-divider uk-margin-medium-top">
+                                                    <li>Personalized Onboarding</li>
+                                                    <li>Campaign manager</li>
+                                                    <li>45.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-primary uk-button-large uk-margin-top">Get Started</a>
+                                                <div class="uk-background-primary uk-light uk-position-top-right uk-position-small uk-text-small uk-text-uppercase uk-text-bold" style="padding: 3px 13px">best seller</div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted">
+                                                <div class="uk-margin-medium-top">
+                                                    <h3 class="uk-card-title uk-text-small uk-text-uppercase uk-text-bold">Expert</h3>
+                                                    <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                        <div>
+                                                            <span class="uk-heading-medium">$</span>
+                                                            <span class="uk-heading-medium">149</span>
+                                                        </div>
+                                                        <div class="uk-text-small uk-text-bold">/ MONTHLY</div>
+                                                    </div>
+                                                </div>
+                                                <ul class="uk-list uk-list-divider uk-margin-medium-top">
+                                                    <li>Multivariate and A/B testing</li>
+                                                    <li>Dedicated Onboarding</li>
+                                                    <li>140.000 requests per day</li>
+                                                </ul>
+                                                <a href="#" class="uk-button uk-button-secondary uk-button-large uk-margin-top">Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share4" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/pricing.html#pricing-estatico-estilo-04
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/pricing.html#pricing-estatico-estilo-04
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section">
+                                <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-text-center uk-child-width-1-2@m uk-child-width-1-3@l">
+                                    <div class="uk-padding-small">
+                                        <div class="uk-card uk-card-body uk-section-muted">
+                                            <div class="uk-margin-medium-top">
+                                                <h3 class="uk-card-title uk-text-small uk-text-uppercase uk-text-bold">Profissional</h3>
+                                                <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                    <div>
+                                                        <span class="uk-heading-medium">$</span>
+                                                        <span class="uk-heading-medium">29</span>
+                                                    </div>
+                                                    <div class="uk-text-small uk-text-bold">/ MONTHLY</div>
+                                                </div>
+                                            </div>
+                                            <ul class="uk-list uk-list-divider uk-margin-medium-top">
+                                                <li>Administrative panel</li>
+                                                <li>Pre-built email templates</li>
+                                                <li>10.000 requests per day</li>
+                                            </ul>
+                                            <a href="#" class="uk-button uk-button-secondary uk-button-large uk-margin-top">Get Started</a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-padding-small">
+                                        <div class="uk-card uk-card-body uk-section-muted">
+                                            <div class="uk-margin-medium-top">
+                                                <h3 class="uk-card-title uk-text-small uk-text-uppercase uk-text-bold">Advanced</h3>
+                                                <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                    <div>
+                                                        <span class="uk-heading-medium">$</span>
+                                                        <span class="uk-heading-medium">79</span>
+                                                    </div>
+                                                    <div class="uk-text-small uk-text-bold">/ MONTHLY</div>
+                                                </div>
+                                            </div>
+                                            <ul class="uk-list uk-list-divider uk-margin-medium-top">
+                                                <li>Personalized Onboarding</li>
+                                                <li>Campaign manager</li>
+                                                <li>45.000 requests per day</li>
+                                            </ul>
+                                            <a href="#" class="uk-button uk-button-primary uk-button-large uk-margin-top">Get Started</a>
+                                            <div class="uk-background-primary uk-light uk-position-top-right uk-position-small uk-text-small uk-text-uppercase uk-text-bold" style="padding: 3px 13px">best seller</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-padding-small">
+                                        <div class="uk-card uk-card-body uk-section-muted">
+                                            <div class="uk-margin-medium-top">
+                                                <h3 class="uk-card-title uk-text-small uk-text-uppercase uk-text-bold">Expert</h3>
+                                                <div class="uk-flex uk-flex-bottom uk-flex-center">
+                                                    <div>
+                                                        <span class="uk-heading-medium">$</span>
+                                                        <span class="uk-heading-medium">149</span>
+                                                    </div>
+                                                    <div class="uk-text-small uk-text-bold">/ MONTHLY</div>
+                                                </div>
+                                            </div>
+                                            <ul class="uk-list uk-list-divider uk-margin-medium-top">
+                                                <li>Multivariate and A/B testing</li>
+                                                <li>Dedicated Onboarding</li>
+                                                <li>140.000 requests per day</li>
+                                            </ul>
+                                            <a href="#" class="uk-button uk-button-secondary uk-button-large uk-margin-top">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-text-center uk-child-width-1-2@m uk-child-width-1-3@l&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-card uk-card-body uk-section-muted&#x22;&#x3E;
+                    &#x3C;div class=&#x22;uk-margin-medium-top&#x22;&#x3E;
+                        &#x3C;h3 class=&#x22;uk-card-title uk-text-small uk-text-uppercase uk-text-bold&#x22;&#x3E;Profissional&#x3C;/h3&#x3E;
+                        &#x3C;div class=&#x22;uk-flex uk-flex-bottom uk-flex-center&#x22;&#x3E;
+                            &#x3C;div&#x3E;
+                                &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;$&#x3C;/span&#x3E;
+                                &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;29&#x3C;/span&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;div class=&#x22;uk-text-small uk-text-bold&#x22;&#x3E;/ MONTHLY&#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;ul class=&#x22;uk-list uk-list-divider uk-margin-medium-top&#x22;&#x3E;
+                        &#x3C;li&#x3E;Administrative panel&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;Pre-built email templates&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;10.000 requests per day&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-secondary uk-button-large uk-margin-top&#x22;&#x3E;Get Started&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-card uk-card-body uk-section-muted&#x22;&#x3E;
+                    &#x3C;div class=&#x22;uk-margin-medium-top&#x22;&#x3E;
+                        &#x3C;h3 class=&#x22;uk-card-title uk-text-small uk-text-uppercase uk-text-bold&#x22;&#x3E;Advanced&#x3C;/h3&#x3E;
+                        &#x3C;div class=&#x22;uk-flex uk-flex-bottom uk-flex-center&#x22;&#x3E;
+                            &#x3C;div&#x3E;
+                                &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;$&#x3C;/span&#x3E;
+                                &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;79&#x3C;/span&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;div class=&#x22;uk-text-small uk-text-bold&#x22;&#x3E;/ MONTHLY&#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;ul class=&#x22;uk-list uk-list-divider uk-margin-medium-top&#x22;&#x3E;
+                        &#x3C;li&#x3E;Personalized Onboarding&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;Campaign manager&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;45.000 requests per day&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-primary uk-button-large uk-margin-top&#x22;&#x3E;Get Started&#x3C;/a&#x3E;
+                    &#x3C;div class=&#x22;uk-background-primary uk-light uk-position-top-right uk-position-small uk-text-small uk-text-uppercase uk-text-bold&#x22; style=&#x22;padding: 3px 13px&#x22;&#x3E;best seller&#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-card uk-card-body uk-section-muted&#x22;&#x3E;
+                    &#x3C;div class=&#x22;uk-margin-medium-top&#x22;&#x3E;
+                        &#x3C;h3 class=&#x22;uk-card-title uk-text-small uk-text-uppercase uk-text-bold&#x22;&#x3E;Expert&#x3C;/h3&#x3E;
+                        &#x3C;div class=&#x22;uk-flex uk-flex-bottom uk-flex-center&#x22;&#x3E;
+                            &#x3C;div&#x3E;
+                                &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;$&#x3C;/span&#x3E;
+                                &#x3C;span class=&#x22;uk-heading-medium&#x22;&#x3E;149&#x3C;/span&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;div class=&#x22;uk-text-small uk-text-bold&#x22;&#x3E;/ MONTHLY&#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;ul class=&#x22;uk-list uk-list-divider uk-margin-medium-top&#x22;&#x3E;
+                        &#x3C;li&#x3E;Multivariate and A/B testing&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;Dedicated Onboarding&#x3C;/li&#x3E;
+                        &#x3C;li&#x3E;140.000 requests per day&#x3C;/li&#x3E;
+                    &#x3C;/ul&#x3E;
+                    &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-secondary uk-button-large uk-margin-top&#x22;&#x3E;Get Started&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="pricing-estatico-estilo-05">Estilo 05</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@l">
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted">
+                                                <div>
+                                                    <h3 class="uk-card-title">Profissional</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, perspiciatis?</p>
+                                                </div>
+                                                <div class="uk-background-default uk-padding-small uk-border-rounded">
+                                                    <div class="uk-flex uk-flex-between">
+                                                        <div>
+                                                            <span class="uk-heading-small">$</span>
+                                                            <span class="uk-heading-small">29</span>
+                                                        </div>
+                                                        <div class="uk-text-small uk-text-bold">MONTHLY</div>
+                                                    </div>
+                                                    <a href="#" class="uk-button uk-button-large uk-border-pill uk-button-secondary uk-width-1-1 uk-margin-top">Get Started</a>
+                                                    <ul class="uk-list uk-text-center">
+                                                        <li>Administrative panel</li>
+                                                        <li>Pre-built email templates</li>
+                                                        <li>10.000 requests per day</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted">
+                                                <div>
+                                                    <h3 class="uk-card-title">Advanced</h3>
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, vel.</p>
+                                                </div>
+                                                <div class="uk-background-default uk-padding-small uk-border-rounded">
+                                                    <div class="uk-flex uk-flex-between">
+                                                        <div>
+                                                            <span class="uk-heading-small">$</span>
+                                                            <span class="uk-heading-small">79</span>
+                                                        </div>
+                                                        <div class="uk-text-small uk-text-bold">MONTHLY</div>
+                                                    </div>
+                                                    <a href="#" class="uk-button uk-button-large uk-border-pill uk-button-primary uk-width-1-1 uk-margin-top">Get Started</a>
+                                                    <ul class="uk-list uk-text-center">
+                                                        <li>Personalized Onboarding</li>
+                                                        <li>Campaign manager</li>
+                                                        <li>45.000 requests per day</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted">
+                                                <div>
+                                                    <h3 class="uk-card-title">Expert</h3>
+                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, modi.</p>
+                                                </div>
+                                                <div class="uk-background-default uk-padding-small uk-border-rounded">
+                                                    <div class="uk-flex uk-flex-between">
+                                                        <div>
+                                                            <span class="uk-heading-small">$</span>
+                                                            <span class="uk-heading-small">149</span>
+                                                        </div>
+                                                        <div class="uk-text-small uk-text-bold">MONTHLY</div>
+                                                    </div>
+                                                    <a href="#" class="uk-button uk-button-large uk-border-pill uk-button-secondary uk-width-1-1 uk-margin-top">Get Started</a>
+                                                    <ul class="uk-list uk-text-center">
+                                                        <li>Multivariate and A/B testing</li>
+                                                        <li>Dedicated Onboarding</li>
+                                                        <li>140.000 requests per day</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen5"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share5"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen5" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section">
+                                    <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@l">
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted">
+                                                <div>
+                                                    <h3 class="uk-card-title">Profissional</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, perspiciatis?</p>
+                                                </div>
+                                                <div class="uk-background-default uk-padding-small uk-border-rounded">
+                                                    <div class="uk-flex uk-flex-between">
+                                                        <div>
+                                                            <span class="uk-heading-small">$</span>
+                                                            <span class="uk-heading-small">29</span>
+                                                        </div>
+                                                        <div class="uk-text-small uk-text-bold">MONTHLY</div>
+                                                    </div>
+                                                    <a href="#" class="uk-button uk-button-large uk-border-pill uk-button-secondary uk-width-1-1 uk-margin-top">Get Started</a>
+                                                    <ul class="uk-list uk-text-center">
+                                                        <li>Administrative panel</li>
+                                                        <li>Pre-built email templates</li>
+                                                        <li>10.000 requests per day</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted">
+                                                <div>
+                                                    <h3 class="uk-card-title">Advanced</h3>
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, vel.</p>
+                                                </div>
+                                                <div class="uk-background-default uk-padding-small uk-border-rounded">
+                                                    <div class="uk-flex uk-flex-between">
+                                                        <div>
+                                                            <span class="uk-heading-small">$</span>
+                                                            <span class="uk-heading-small">79</span>
+                                                        </div>
+                                                        <div class="uk-text-small uk-text-bold">MONTHLY</div>
+                                                    </div>
+                                                    <a href="#" class="uk-button uk-button-large uk-border-pill uk-button-primary uk-width-1-1 uk-margin-top">Get Started</a>
+                                                    <ul class="uk-list uk-text-center">
+                                                        <li>Personalized Onboarding</li>
+                                                        <li>Campaign manager</li>
+                                                        <li>45.000 requests per day</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <div class="uk-card uk-card-body uk-section-muted">
+                                                <div>
+                                                    <h3 class="uk-card-title">Expert</h3>
+                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, modi.</p>
+                                                </div>
+                                                <div class="uk-background-default uk-padding-small uk-border-rounded">
+                                                    <div class="uk-flex uk-flex-between">
+                                                        <div>
+                                                            <span class="uk-heading-small">$</span>
+                                                            <span class="uk-heading-small">149</span>
+                                                        </div>
+                                                        <div class="uk-text-small uk-text-bold">MONTHLY</div>
+                                                    </div>
+                                                    <a href="#" class="uk-button uk-button-large uk-border-pill uk-button-secondary uk-width-1-1 uk-margin-top">Get Started</a>
+                                                    <ul class="uk-list uk-text-center">
+                                                        <li>Multivariate and A/B testing</li>
+                                                        <li>Dedicated Onboarding</li>
+                                                        <li>140.000 requests per day</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share5" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/pricing.html#pricing-estatico-estilo-05
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/pricing.html#pricing-estatico-estilo-05
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section">
+                                <div class="uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@l">
+                                    <div class="uk-padding-small">
+                                        <div class="uk-card uk-card-body uk-section-muted">
+                                            <div>
+                                                <h3 class="uk-card-title">Profissional</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, perspiciatis?</p>
+                                            </div>
+                                            <div class="uk-background-default uk-padding-small uk-border-rounded">
+                                                <div class="uk-flex uk-flex-between">
+                                                    <div>
+                                                        <span class="uk-heading-small">$</span>
+                                                        <span class="uk-heading-small">29</span>
+                                                    </div>
+                                                    <div class="uk-text-small uk-text-bold">MONTHLY</div>
+                                                </div>
+                                                <a href="#" class="uk-button uk-button-large uk-border-pill uk-button-secondary uk-width-1-1 uk-margin-top">Get Started</a>
+                                                <ul class="uk-list uk-text-center">
+                                                    <li>Administrative panel</li>
+                                                    <li>Pre-built email templates</li>
+                                                    <li>10.000 requests per day</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-padding-small">
+                                        <div class="uk-card uk-card-body uk-section-muted">
+                                            <div>
+                                                <h3 class="uk-card-title">Advanced</h3>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, vel.</p>
+                                            </div>
+                                            <div class="uk-background-default uk-padding-small uk-border-rounded">
+                                                <div class="uk-flex uk-flex-between">
+                                                    <div>
+                                                        <span class="uk-heading-small">$</span>
+                                                        <span class="uk-heading-small">79</span>
+                                                    </div>
+                                                    <div class="uk-text-small uk-text-bold">MONTHLY</div>
+                                                </div>
+                                                <a href="#" class="uk-button uk-button-large uk-border-pill uk-button-primary uk-width-1-1 uk-margin-top">Get Started</a>
+                                                <ul class="uk-list uk-text-center">
+                                                    <li>Personalized Onboarding</li>
+                                                    <li>Campaign manager</li>
+                                                    <li>45.000 requests per day</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-padding-small">
+                                        <div class="uk-card uk-card-body uk-section-muted">
+                                            <div>
+                                                <h3 class="uk-card-title">Expert</h3>
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, modi.</p>
+                                            </div>
+                                            <div class="uk-background-default uk-padding-small uk-border-rounded">
+                                                <div class="uk-flex uk-flex-between">
+                                                    <div>
+                                                        <span class="uk-heading-small">$</span>
+                                                        <span class="uk-heading-small">149</span>
+                                                    </div>
+                                                    <div class="uk-text-small uk-text-bold">MONTHLY</div>
+                                                </div>
+                                                <a href="#" class="uk-button uk-button-large uk-border-pill uk-button-secondary uk-width-1-1 uk-margin-top">Get Started</a>
+                                                <ul class="uk-list uk-text-center">
+                                                    <li>Multivariate and A/B testing</li>
+                                                    <li>Dedicated Onboarding</li>
+                                                    <li>140.000 requests per day</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large uk-flex uk-flex-wrap uk-flex-center uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@l&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-card uk-card-body uk-section-muted&#x22;&#x3E;
+                    &#x3C;div&#x3E;
+                        &#x3C;h3 class=&#x22;uk-card-title&#x22;&#x3E;Profissional&#x3C;/h3&#x3E;
+                        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, perspiciatis?&#x3C;/p&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;uk-background-default uk-padding-small uk-border-rounded&#x22;&#x3E;
+                        &#x3C;div class=&#x22;uk-flex uk-flex-between&#x22;&#x3E;
+                            &#x3C;div&#x3E;
+                                &#x3C;span class=&#x22;uk-heading-small&#x22;&#x3E;$&#x3C;/span&#x3E;
+                                &#x3C;span class=&#x22;uk-heading-small&#x22;&#x3E;29&#x3C;/span&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;div class=&#x22;uk-text-small uk-text-bold&#x22;&#x3E;MONTHLY&#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-large uk-border-pill uk-button-secondary uk-width-1-1 uk-margin-top&#x22;&#x3E;Get Started&#x3C;/a&#x3E;
+                        &#x3C;ul class=&#x22;uk-list uk-text-center&#x22;&#x3E;
+                            &#x3C;li&#x3E;Administrative panel&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;Pre-built email templates&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;10.000 requests per day&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-card uk-card-body uk-section-muted&#x22;&#x3E;
+                    &#x3C;div&#x3E;
+                        &#x3C;h3 class=&#x22;uk-card-title&#x22;&#x3E;Advanced&#x3C;/h3&#x3E;
+                        &#x3C;p&#x3E;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, vel.&#x3C;/p&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;uk-background-default uk-padding-small uk-border-rounded&#x22;&#x3E;
+                        &#x3C;div class=&#x22;uk-flex uk-flex-between&#x22;&#x3E;
+                            &#x3C;div&#x3E;
+                                &#x3C;span class=&#x22;uk-heading-small&#x22;&#x3E;$&#x3C;/span&#x3E;
+                                &#x3C;span class=&#x22;uk-heading-small&#x22;&#x3E;79&#x3C;/span&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;div class=&#x22;uk-text-small uk-text-bold&#x22;&#x3E;MONTHLY&#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-large uk-border-pill uk-button-primary uk-width-1-1 uk-margin-top&#x22;&#x3E;Get Started&#x3C;/a&#x3E;
+                        &#x3C;ul class=&#x22;uk-list uk-text-center&#x22;&#x3E;
+                            &#x3C;li&#x3E;Personalized Onboarding&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;Campaign manager&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;45.000 requests per day&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-card uk-card-body uk-section-muted&#x22;&#x3E;
+                    &#x3C;div&#x3E;
+                        &#x3C;h3 class=&#x22;uk-card-title&#x22;&#x3E;Expert&#x3C;/h3&#x3E;
+                        &#x3C;p&#x3E;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, modi.&#x3C;/p&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;uk-background-default uk-padding-small uk-border-rounded&#x22;&#x3E;
+                        &#x3C;div class=&#x22;uk-flex uk-flex-between&#x22;&#x3E;
+                            &#x3C;div&#x3E;
+                                &#x3C;span class=&#x22;uk-heading-small&#x22;&#x3E;$&#x3C;/span&#x3E;
+                                &#x3C;span class=&#x22;uk-heading-small&#x22;&#x3E;149&#x3C;/span&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;div class=&#x22;uk-text-small uk-text-bold&#x22;&#x3E;MONTHLY&#x3C;/div&#x3E;
+                        &#x3C;/div&#x3E;
+                        &#x3C;a href=&#x22;#&#x22; class=&#x22;uk-button uk-button-large uk-border-pill uk-button-secondary uk-width-1-1 uk-margin-top&#x22;&#x3E;Get Started&#x3C;/a&#x3E;
+                        &#x3C;ul class=&#x22;uk-list uk-text-center&#x22;&#x3E;
+                            &#x3C;li&#x3E;Multivariate and A/B testing&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;Dedicated Onboarding&#x3C;/li&#x3E;
+                            &#x3C;li&#x3E;140.000 requests per day&#x3C;/li&#x3E;
+                        &#x3C;/ul&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="uk-padding-small uk-section-primary uk-text-center">
+        <footer>
+            <p class="uk-margin-remove uk-text-italic">
+                Feito com ❤️ por: <a href="https://github.com/leensc" target="_blank" rel="noopener"><span>Leandro do Nascimento</span></a>
+            </p>
+        </footer>
+    </section>
+</body>
+</html>
