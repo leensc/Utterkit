@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A seção Team (ou Equipe em português) de um site é utilizada para apresentar as pessoas que fazem parte da equipe da empresa. Ela fornece uma breve introdução dos membros-chave, destacando suas funções, habilidades e contribuições, o que ajuda a humanizar a empresa, criar confiança e mostrar a experiência e diversidade do time aos visitantes e potenciais clientes.">
+    <meta name="author" content="Leandro do Nascimento">
+    <link rel="shortcut icon" href="../img/logo-primary.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <!-- UIkit -->
+    <link rel="stylesheet" href="../css/uikit.min.css">
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Utterkit -->
+    <link rel="stylesheet" href="../css/utterkit.css">
+
+    <!-- JQuery -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <title>Team | Utterkit</title>
+</head>
+<body>
+    <section class="uk-section-primary uk-section-primary">
+        <div id="offcanvas-push" uk-offcanvas="mode: push">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center uk-background-primary">
+                <button class="uk-offcanvas-close uk-close-large" type="button" uk-close uk-toggle="cls: uk-close-large; mode: media; media: @s"></button>
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical" uk-nav>
+                    <li><a href="../index.html">Home</a></li>
+                    <hr>
+                    <li><a href="../instalacao.html">Instalação</a></li>
+                    <hr>
+                    <li class="uk-active"><a href="../recursos.html">Recursos</a></li>
+                    <hr>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <hr>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <hr>
+                    <li><a href="../termos-e-uso.html">Termos e Uso</a></li>
+                    <hr>
+                    <li><a href="../licenca.html">Licença</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="uk-navbar-container uk-navbar-transparent">
+            <div class="uk-container uk-container-large">
+                <div class="uk-margin-left uk-margin-right">
+                    <div uk-navbar="mode: click" class="uk-navbar uk-flex uk-flex-middle uk-flex-between">
+                        <div>
+                            <a href="../index.html" class="uk-navbar-item uk-logo">
+                                <img src="../img/logo-secondary.svg" width="30" height="30" alt="Logo Utterkit">
+                                <span class="uk-margin-small-left">Utterkit</span>
+                            </a>
+                        </div>
+                        <a href="#offcanvas-push" uk-toggle>
+                            <span uk-icon="icon: menu; ratio: 2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="uk-section uk-section-medium">
+        <div class="uk-container uk-container-medium">
+            <nav aria-label="Breadcrumb">
+                <ul class="uk-breadcrumb">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../recursos.html">Recursos</a></li>
+                    <li><span aria-current="page">Team</span></li>
+                </ul>
+            </nav>
+            <h1 class="uk-heading-large">Team</h1>
+            <h2>Apresente quem está por trás de todo o projeto</h2>
+            <p>
+                A seção <b>Team</b> (ou <em>Equipe</em> em português) de um site é utilizada para apresentar as pessoas que fazem parte da equipe da empresa. Ela fornece
+                uma breve introdução dos membros-chave, destacando suas funções, habilidades e contribuições, o que ajuda a humanizar a empresa, criar confiança e
+                mostrar a experiência e diversidade do time aos visitantes e potenciais clientes.
+            </p>
+            <hr class="uk-margin-medium-top">
+            <div>
+                <h2 uk-sticky="end: true; overflow-flip: false; offset: -1" class="uk-margin-small-bottom utk-owner-blurred-effect-owner">Team estático</h2>
+                <div class="uk-padding-small utk-owner-box-style">
+                    <h3 id="team-estatico-estilo-01">Estilo 01</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section">
+                                    <div class="uk-container uk-container-large">
+                                        <div class="uk-width-2-3@s uk-padding-small">
+                                            <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique temporibus ex quidem iusto explicabo neque maiores unde
+                                                voluptatum eveniet, provident repellat quas eos praesentium dignissimos quo possimus? Nobis, repellendus inventore?
+                                            </p>
+                                        </div>
+                                        <div class="uk-width-1-1 uk-flex uk-flex-wrap uk-flex-center uk-child-width-auto uk-child-width-1-3@s uk-child-width-1-6@l">
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">Emily Johnson</h3>
+                                                <p class="uk-margin-remove">Project manager</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">Michael Davis</h3>
+                                                <p class="uk-margin-remove">SEO, Marketing</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">Sarah Miller</h3>
+                                                <p class="uk-margin-remove">Fullstack developer</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">James Anderson</h3>
+                                                <p class="uk-margin-remove">Design UI/UX</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">Jessica Brown</h3>
+                                                <p class="uk-margin-remove">Data analyst, Information Security</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">David Miller</h3>
+                                                <p class="uk-margin-remove">Customer service, Product Management</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen1"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share1"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen1" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section">
+                                    <div class="uk-container uk-container-large">
+                                        <div class="uk-width-2-3@s uk-padding-small">
+                                            <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique temporibus ex quidem iusto explicabo neque maiores unde
+                                                voluptatum eveniet, provident repellat quas eos praesentium dignissimos quo possimus? Nobis, repellendus inventore?
+                                            </p>
+                                        </div>
+                                        <div class="uk-width-1-1 uk-flex uk-flex-wrap uk-flex-center uk-child-width-auto uk-child-width-1-3@s uk-child-width-1-6@l">
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">Emily Johnson</h3>
+                                                <p class="uk-margin-remove">Project manager</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">Michael Davis</h3>
+                                                <p class="uk-margin-remove">SEO, Marketing</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">Sarah Miller</h3>
+                                                <p class="uk-margin-remove">Fullstack developer</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">James Anderson</h3>
+                                                <p class="uk-margin-remove">Design UI/UX</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">Jessica Brown</h3>
+                                                <p class="uk-margin-remove">Data analyst, Information Security</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">David Miller</h3>
+                                                <p class="uk-margin-remove">Customer service, Product Management</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share1" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/team.html#team-estatico-estilo-01
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/team.html#team-estatico-estilo-01
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section">
+                                <div class="uk-container uk-container-large">
+                                    <div class="uk-width-2-3@s uk-padding-small">
+                                        <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique temporibus ex quidem iusto explicabo neque maiores unde
+                                            voluptatum eveniet, provident repellat quas eos praesentium dignissimos quo possimus? Nobis, repellendus inventore?
+                                        </p>
+                                    </div>
+                                    <div class="uk-width-1-1 uk-flex uk-flex-wrap uk-flex-center uk-child-width-auto uk-child-width-1-3@s uk-child-width-1-6@l">
+                                        <div class="uk-padding-small">
+                                            <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                            <h3 class="uk-margin-top uk-margin-small-bottom">Emily Johnson</h3>
+                                            <p class="uk-margin-remove">Project manager</p>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                            <h3 class="uk-margin-top uk-margin-small-bottom">Michael Davis</h3>
+                                            <p class="uk-margin-remove">SEO, Marketing</p>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                            <h3 class="uk-margin-top uk-margin-small-bottom">Sarah Miller</h3>
+                                            <p class="uk-margin-remove">Fullstack developer</p>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                            <h3 class="uk-margin-top uk-margin-small-bottom">James Anderson</h3>
+                                            <p class="uk-margin-remove">Design UI/UX</p>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                            <h3 class="uk-margin-top uk-margin-small-bottom">Jessica Brown</h3>
+                                            <p class="uk-margin-remove">Data analyst, Information Security</p>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <img src="https://placehold.co/350x350" width="350" height="350" alt="">
+                                            <h3 class="uk-margin-top uk-margin-small-bottom">David Miller</h3>
+                                            <p class="uk-margin-remove">Customer service, Product Management</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-large&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-width-2-3@s uk-padding-small&#x22;&#x3E;
+                &#x3C;h2 class=&#x22;uk-heading-small&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing.&#x3C;/h2&#x3E;
+                &#x3C;p&#x3E;
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique temporibus ex quidem iusto explicabo neque maiores unde
+                    voluptatum eveniet, provident repellat quas eos praesentium dignissimos quo possimus? Nobis, repellendus inventore?
+                &#x3C;/p&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-width-1-1 uk-flex uk-flex-wrap uk-flex-center uk-child-width-auto uk-child-width-1-3@s uk-child-width-1-6@l&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                    &#x3C;img src=&#x22;https://placehold.co/350x350&#x22; width=&#x22;350&#x22; height=&#x22;350&#x22; alt=&#x22;&#x22;&#x3E;
+                    &#x3C;h3 class=&#x22;uk-margin-top uk-margin-small-bottom&#x22;&#x3E;Emily Johnson&#x3C;/h3&#x3E;
+                    &#x3C;p class=&#x22;uk-margin-remove&#x22;&#x3E;Project manager&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                    &#x3C;img src=&#x22;https://placehold.co/350x350&#x22; width=&#x22;350&#x22; height=&#x22;350&#x22; alt=&#x22;&#x22;&#x3E;
+                    &#x3C;h3 class=&#x22;uk-margin-top uk-margin-small-bottom&#x22;&#x3E;Michael Davis&#x3C;/h3&#x3E;
+                    &#x3C;p class=&#x22;uk-margin-remove&#x22;&#x3E;SEO, Marketing&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                    &#x3C;img src=&#x22;https://placehold.co/350x350&#x22; width=&#x22;350&#x22; height=&#x22;350&#x22; alt=&#x22;&#x22;&#x3E;
+                    &#x3C;h3 class=&#x22;uk-margin-top uk-margin-small-bottom&#x22;&#x3E;Sarah Miller&#x3C;/h3&#x3E;
+                    &#x3C;p class=&#x22;uk-margin-remove&#x22;&#x3E;Fullstack developer&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                    &#x3C;img src=&#x22;https://placehold.co/350x350&#x22; width=&#x22;350&#x22; height=&#x22;350&#x22; alt=&#x22;&#x22;&#x3E;
+                    &#x3C;h3 class=&#x22;uk-margin-top uk-margin-small-bottom&#x22;&#x3E;James Anderson&#x3C;/h3&#x3E;
+                    &#x3C;p class=&#x22;uk-margin-remove&#x22;&#x3E;Design UI/UX&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                    &#x3C;img src=&#x22;https://placehold.co/350x350&#x22; width=&#x22;350&#x22; height=&#x22;350&#x22; alt=&#x22;&#x22;&#x3E;
+                    &#x3C;h3 class=&#x22;uk-margin-top uk-margin-small-bottom&#x22;&#x3E;Jessica Brown&#x3C;/h3&#x3E;
+                    &#x3C;p class=&#x22;uk-margin-remove&#x22;&#x3E;Data analyst, Information Security&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                    &#x3C;img src=&#x22;https://placehold.co/350x350&#x22; width=&#x22;350&#x22; height=&#x22;350&#x22; alt=&#x22;&#x22;&#x3E;
+                    &#x3C;h3 class=&#x22;uk-margin-top uk-margin-small-bottom&#x22;&#x3E;David Miller&#x3C;/h3&#x3E;
+                    &#x3C;p class=&#x22;uk-margin-remove&#x22;&#x3E;Customer service, Product Management&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+                <div class="uk-margin-medium-top uk-padding-small utk-owner-box-style">
+                    <h3 id="team-estatico-estilo-02">Estilo 02</h3>
+                    <ul uk-tab>
+                        <li><a href="#">Visualização</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JS</a></li>
+                        <li class="uk-margin-auto-left uk-disabled uk-position-relative">
+                            <a uk-tooltip="Copiar Código" class="utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></a>
+                            <textarea class="utk-owner-area-clipboardcode">
+                                <section class="uk-section">
+                                    <div class="uk-container uk-container-medium">
+                                        <div class="uk-width-2-3@s uk-padding-small">
+                                            <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae maxime delectus beatae quo incidunt tempore officiis dolor libero numquam!</h2>
+                                        </div>
+                                        <div class="uk-width-1-1 uk-flex uk-flex-wrap uk-flex-center uk-child-width-auto uk-child-width-1-3@m uk-child-width-1-4@l">
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/260x320" width="260" height="320" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">Emily Johnson</h3>
+                                                <p class="uk-margin-remove">Project manager</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/260x320" width="260" height="320" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">Michael Davis</h3>
+                                                <p class="uk-margin-remove">SEO, Marketing</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/260x320" width="260" height="320" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">Sarah Miller</h3>
+                                                <p class="uk-margin-remove">Fullstack developer</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/260x320" width="260" height="320" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">James Anderson</h3>
+                                                <p class="uk-margin-remove">Design UI/UX</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </textarea>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Modo tela cheia" uk-toggle="target: #modal-fullscreen2"><i class="bi bi-fullscreen"></i></a>
+                        </li>
+                        <li class="uk-disabled">
+                            <a uk-tooltip="Compartilhar estilo" uk-toggle="target: #modal-share2"><i class="bi bi-share"></i></a>
+                        </li>
+                        <div id="modal-fullscreen2" class="uk-padding-remove" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-padding-remove uk-width-1-1 uk-height-viewport">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <section class="uk-section">
+                                    <div class="uk-container uk-container-medium">
+                                        <div class="uk-width-2-3@s uk-padding-small">
+                                            <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae maxime delectus beatae quo incidunt tempore officiis dolor libero numquam!</h2>
+                                        </div>
+                                        <div class="uk-width-1-1 uk-flex uk-flex-wrap uk-flex-center uk-child-width-auto uk-child-width-1-3@m uk-child-width-1-4@l">
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/260x320" width="260" height="320" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">Emily Johnson</h3>
+                                                <p class="uk-margin-remove">Project manager</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/260x320" width="260" height="320" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">Michael Davis</h3>
+                                                <p class="uk-margin-remove">SEO, Marketing</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/260x320" width="260" height="320" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">Sarah Miller</h3>
+                                                <p class="uk-margin-remove">Fullstack developer</p>
+                                            </div>
+                                            <div class="uk-padding-small">
+                                                <img src="https://placehold.co/260x320" width="260" height="320" alt="">
+                                                <h3 class="uk-margin-top uk-margin-small-bottom">James Anderson</h3>
+                                                <p class="uk-margin-remove">Design UI/UX</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div id="modal-share2" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Compartilhe o estilo</h2>
+                                <p>Precisando demonstrar o código para alguém ou referenciar em algum lugar? Copie, Cole e pronto.</p>
+                                <div uk-alert class="utk-owner-alert-clipboard-share">
+                                    https://leensc.github.io/Utterkit/recursos/team.html#team-estatico-estilo-02
+                                    <button class="uk-button uk-button-primary uk-position-right utk-owner-btn-clipboardcode"><i class="bi bi-copy"></i></button>
+                                    <textarea class="utk-owner-area-clipboardcode">
+                                        https://leensc.github.io/Utterkit/recursos/team.html#team-estatico-estilo-02
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="uk-switcher uk-margin">
+                        <div>
+                            <section class="uk-section">
+                                <div class="uk-container uk-container-medium">
+                                    <div class="uk-width-2-3@s uk-padding-small">
+                                        <h2 class="uk-heading-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae maxime delectus beatae quo incidunt tempore officiis dolor libero numquam!</h2>
+                                    </div>
+                                    <div class="uk-width-1-1 uk-flex uk-flex-wrap uk-flex-center uk-child-width-auto uk-child-width-1-3@m uk-child-width-1-4@l">
+                                        <div class="uk-padding-small">
+                                            <img src="https://placehold.co/260x320" width="260" height="320" alt="">
+                                            <h3 class="uk-margin-top uk-margin-small-bottom">Emily Johnson</h3>
+                                            <p class="uk-margin-remove">Project manager</p>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <img src="https://placehold.co/260x320" width="260" height="320" alt="">
+                                            <h3 class="uk-margin-top uk-margin-small-bottom">Michael Davis</h3>
+                                            <p class="uk-margin-remove">SEO, Marketing</p>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <img src="https://placehold.co/260x320" width="260" height="320" alt="">
+                                            <h3 class="uk-margin-top uk-margin-small-bottom">Sarah Miller</h3>
+                                            <p class="uk-margin-remove">Fullstack developer</p>
+                                        </div>
+                                        <div class="uk-padding-small">
+                                            <img src="https://placehold.co/260x320" width="260" height="320" alt="">
+                                            <h3 class="uk-margin-top uk-margin-small-bottom">James Anderson</h3>
+                                            <p class="uk-margin-remove">Design UI/UX</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div>
+<pre>
+<code>
+    &#x3C;section class=&#x22;uk-section&#x22;&#x3E;
+        &#x3C;div class=&#x22;uk-container uk-container-medium&#x22;&#x3E;
+            &#x3C;div class=&#x22;uk-width-2-3@s uk-padding-small&#x22;&#x3E;
+                &#x3C;h2 class=&#x22;uk-heading-small&#x22;&#x3E;Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste molestiae maxime delectus beatae quo incidunt tempore officiis dolor libero numquam!&#x3C;/h2&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;div class=&#x22;uk-width-1-1 uk-flex uk-flex-wrap uk-flex-center uk-child-width-auto uk-child-width-1-3@m uk-child-width-1-4@l&#x22;&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                    &#x3C;img src=&#x22;https://placehold.co/260x320&#x22; width=&#x22;260&#x22; height=&#x22;320&#x22; alt=&#x22;&#x22;&#x3E;
+                    &#x3C;h3 class=&#x22;uk-margin-top uk-margin-small-bottom&#x22;&#x3E;Emily Johnson&#x3C;/h3&#x3E;
+                    &#x3C;p class=&#x22;uk-margin-remove&#x22;&#x3E;Project manager&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                    &#x3C;img src=&#x22;https://placehold.co/260x320&#x22; width=&#x22;260&#x22; height=&#x22;320&#x22; alt=&#x22;&#x22;&#x3E;
+                    &#x3C;h3 class=&#x22;uk-margin-top uk-margin-small-bottom&#x22;&#x3E;Michael Davis&#x3C;/h3&#x3E;
+                    &#x3C;p class=&#x22;uk-margin-remove&#x22;&#x3E;SEO, Marketing&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                    &#x3C;img src=&#x22;https://placehold.co/260x320&#x22; width=&#x22;260&#x22; height=&#x22;320&#x22; alt=&#x22;&#x22;&#x3E;
+                    &#x3C;h3 class=&#x22;uk-margin-top uk-margin-small-bottom&#x22;&#x3E;Sarah Miller&#x3C;/h3&#x3E;
+                    &#x3C;p class=&#x22;uk-margin-remove&#x22;&#x3E;Fullstack developer&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;uk-padding-small&#x22;&#x3E;
+                    &#x3C;img src=&#x22;https://placehold.co/260x320&#x22; width=&#x22;260&#x22; height=&#x22;320&#x22; alt=&#x22;&#x22;&#x3E;
+                    &#x3C;h3 class=&#x22;uk-margin-top uk-margin-small-bottom&#x22;&#x3E;James Anderson&#x3C;/h3&#x3E;
+                    &#x3C;p class=&#x22;uk-margin-remove&#x22;&#x3E;Design UI/UX&#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
+</code>
+</pre>
+                        </div>
+                        <div>Este estilo não inclui nenhum CSS adicional.</div>
+                        <div>Este estilo não inclui nenhum JS adicional.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="uk-padding-small uk-section-primary uk-text-center">
+        <footer>
+            <p class="uk-margin-remove uk-text-italic">
+                Feito com ❤️ por: <a href="https://github.com/leensc" target="_blank" rel="noopener"><span>Leandro do Nascimento</span></a>
+            </p>
+        </footer>
+    </section>
+</body>
+</html>
